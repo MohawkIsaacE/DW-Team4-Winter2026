@@ -16,6 +16,11 @@ public class PlayerController : MonoBehaviour
     private PlayerInput PlayerInput;
     private InputAction InputActionMove;
     private InputAction InputActionJump;
+    private InputAction InputActionAttack;
+
+    // Player-item interaction
+    private bool hasItem;
+    private GameObject item;
 
     // Assign color value on spawn from main spawner
     public void AssignColor(Color color)
@@ -39,6 +44,7 @@ public class PlayerController : MonoBehaviour
         // Here I specify "Player/" but it in not required if assigning the action map in PlayerInput inspector.
         InputActionMove = playerInput.actions.FindAction($"Player/Move");
         InputActionJump = playerInput.actions.FindAction($"Player/Jump");
+        InputActionAttack = playerInput.actions.FindAction($"Player/Attack");
     }
 
     // Assign player number on spawn
@@ -55,7 +61,19 @@ public class PlayerController : MonoBehaviour
         {
             // Buffer input becuase I'm controlling the Rigidbody through FixedUpdate
             // and checking there we can miss inputs.
-            DoJump = true;
+            //DoJump = true;
+
+            // Pick up an item if you don't already have one
+            if (!hasItem)
+            {
+                
+                hasItem = true;
+            }
+            // Otherwise, throw what you are holding
+            else if (hasItem)
+            {
+                hasItem = false;
+            }
         }
     }
 
@@ -69,12 +87,17 @@ public class PlayerController : MonoBehaviour
         }
 
         // MOVE
+        // Reset player movement each frame so it's snappy
+        Rigidbody2D.linearVelocity = Vector2.zero;
+
         // Read the "Move" action value, which is a 2D vector
         Vector2 moveValue = InputActionMove.ReadValue<Vector2>();
-        // Here we're only using the X axis to move.
-        float moveForce = moveValue.x * MoveSpeed;
+
+        // Using force to move
+        Vector2 moveForce = moveValue * MoveSpeed;        
+
         // Apply fraction of force each frame
-        Rigidbody2D.AddForceX(moveForce, ForceMode2D.Force);
+        Rigidbody2D.AddForce(moveForce, ForceMode2D.Impulse);
 
         // JUMP - review Update()
         if (DoJump)
