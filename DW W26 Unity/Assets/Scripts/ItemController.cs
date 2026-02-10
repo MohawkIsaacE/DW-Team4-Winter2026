@@ -6,11 +6,14 @@ public class ItemController : MonoBehaviour
 
     private bool IsPickupAllowed;
     private GameObject player;
+    [SerializeField] public Rigidbody2D rb { get; private set; }
+    [SerializeField] public float throwSpeed { get; private set; } = 10f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        IsPickupAllowed = true;
+        rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -36,7 +39,11 @@ public class ItemController : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             player = collision.gameObject;
-            IsPickupAllowed = true;
+        }
+
+        if (collision.gameObject.CompareTag("Wall"))
+        {
+            Destroy(gameObject);
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
@@ -63,6 +70,10 @@ public class ItemController : MonoBehaviour
     {
         // Remove the item from the player
         this.transform.SetParent(GameObject.Find("ItemStorage").transform);
+        // Make sure no one else can pick up the item
         IsPickupAllowed = false;
+
+        // Start moving the item (throw it)
+        rb.linearVelocity = Vector2.right * throwSpeed;
     }
 }
