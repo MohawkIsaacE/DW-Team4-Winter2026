@@ -17,9 +17,10 @@ public class PlayerController : MonoBehaviour
     private InputAction InputActionMove;
     private InputAction InputActionJump;
     private InputAction InputActionAttack;
+    public bool canPickup;
 
     // Player-item interaction
-    private bool hasItem;
+    public bool hasItem;
     private GameObject item;
 
     // Assign color value on spawn from main spawner
@@ -59,20 +60,15 @@ public class PlayerController : MonoBehaviour
         // Read the "Jump" action state, which is a boolean value
         if (InputActionJump.WasPressedThisFrame())
         {
-            // Buffer input becuase I'm controlling the Rigidbody through FixedUpdate
-            // and checking there we can miss inputs.
-            //DoJump = true;
-
             // Pick up an item if you don't already have one
             if (!hasItem)
             {
-                
-                hasItem = true;
+                canPickup = true;
             }
             // Otherwise, throw what you are holding
             else if (hasItem)
             {
-                hasItem = false;
+                canPickup = false;
             }
         }
     }
