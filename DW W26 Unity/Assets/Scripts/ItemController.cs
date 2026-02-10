@@ -6,9 +6,11 @@ public class ItemController : MonoBehaviour
 
     private bool IsPickupAllowed;
     private GameObject player;
+    private int itemNum;
     private int playerNum;
+    public bool hasBeenThrown;
     [SerializeField] public Rigidbody2D rb { get; private set; }
-    [SerializeField] public float throwSpeed { get; private set; } = 10f;
+    [SerializeField] public float throwSpeed { get; private set; } = 20f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -18,7 +20,7 @@ public class ItemController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void LateUpdate()
+    void Update()
     {
         if (player == null) return;
 
@@ -26,19 +28,40 @@ public class ItemController : MonoBehaviour
         {
             player.GetComponent<PlayerController>().hasItem = true;
             playerNum = player.GetComponent<PlayerController>().PlayerNumber;
+            itemNum = playerNum;
+            IsPickupAllowed = true;
             PickUp();
         }
 
         if (player.GetComponent<PlayerController>().hasItem && !player.GetComponent<PlayerController>().canPickup)
         {
             player.GetComponent<PlayerController>().hasItem = false;
+            IsPickupAllowed = false;
             Throw();
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        // Check if item has been thrown yet first
+        if (collision.gameObject.CompareTag("Player") && hasBeenThrown)
+        {
+            if (itemNum / 2 == 0) // Left team
+            {
+                Destroy(gameObject);
+                // add points to left team
+            }
+            else if (itemNum / 2 == 1) // Right team
+            {
+                Destroy(gameObject);
+                // add points to right team
+            }
+            else
+            {
+                Debug.Log("Error: No player found");
+            }
+        }
+        else if (collision.gameObject.CompareTag("Player"))
         {
             player = collision.gameObject;
         }
@@ -85,6 +108,7 @@ public class ItemController : MonoBehaviour
         this.transform.SetParent(GameObject.Find("ItemStorage").transform);
         // Make sure no one else can pick up the item
         IsPickupAllowed = false;
+        hasBeenThrown = true;
 
         // Start moving the item (throw it)
         // Direction depends on who threw it

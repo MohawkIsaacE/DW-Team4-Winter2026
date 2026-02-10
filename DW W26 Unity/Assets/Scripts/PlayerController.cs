@@ -58,7 +58,7 @@ public class PlayerController : MonoBehaviour
     public void Update()
     {
         // Read the "Jump" action state, which is a boolean value
-        if (InputActionJump.WasPressedThisFrame())
+        if (InputActionAttack.WasPressedThisFrame())
         {
             // Pick up an item if you don't already have one
             if (!hasItem)
