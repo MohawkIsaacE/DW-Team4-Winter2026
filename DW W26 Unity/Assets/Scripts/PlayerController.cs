@@ -58,18 +58,15 @@ public class PlayerController : MonoBehaviour
     public void Update()
     {
         // Read the "Jump" action state, which is a boolean value
-        if (InputActionAttack.WasPressedThisFrame())
+        if (InputActionAttack.WasPressedThisFrame() && !hasItem)
         {
             // Pick up an item if you don't already have one
-            if (!hasItem)
-            {
-                canPickup = true;
-            }
-            // Otherwise, throw what you are holding
-            else if (hasItem)
-            {
-                canPickup = false;
-            }
+            canPickup = true;
+        }
+        else if (InputActionAttack.WasPressedThisFrame() && hasItem)
+        {
+            // Throw the item you are holding
+            canPickup = false;
         }
     }
 

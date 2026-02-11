@@ -4,7 +4,7 @@ public class ItemController : MonoBehaviour
 {
     // Pickup code help from https://discussions.unity.com/t/how-to-pick-up-an-item-in-2d/243149
 
-    private bool IsPickupAllowed;
+    public bool IsPickupAllowed;
     private GameObject player;
     private int itemNum;
     private int playerNum;
@@ -24,12 +24,12 @@ public class ItemController : MonoBehaviour
     {
         if (player == null) return;
 
+        // When the player has no item and presses the pickup key, pick up the item
         if (IsPickupAllowed && !player.GetComponent<PlayerController>().hasItem && player.GetComponent<PlayerController>().canPickup)
         {
             player.GetComponent<PlayerController>().hasItem = true;
             playerNum = player.GetComponent<PlayerController>().PlayerNumber;
             itemNum = playerNum;
-            IsPickupAllowed = true;
             PickUp();
         }
 
@@ -76,7 +76,7 @@ public class ItemController : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             player = null;
-            IsPickupAllowed = false;
+            IsPickupAllowed = true;
         }
     }
 
