@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
     private InputAction InputActionJump;
     private InputAction InputActionAttack;
     public bool canPickup;
+    public bool hasThrown;
 
     // Player-item interaction
     public bool hasItem;
@@ -57,6 +58,9 @@ public class PlayerController : MonoBehaviour
     // Runs each frame
     public void Update()
     {
+        canPickup = false;
+        hasThrown = false;
+
         // Read the "Jump" action state, which is a boolean value
         if (InputActionAttack.WasPressedThisFrame() && !hasItem)
         {
@@ -66,7 +70,7 @@ public class PlayerController : MonoBehaviour
         else if (InputActionAttack.WasPressedThisFrame() && hasItem)
         {
             // Throw the item you are holding
-            canPickup = false;
+            hasThrown = true;
         }
     }
 

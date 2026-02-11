@@ -31,12 +31,13 @@ public class ItemController : MonoBehaviour
             playerNum = player.GetComponent<PlayerController>().PlayerNumber;
             itemNum = playerNum;
             PickUp();
+            IsPickupAllowed = false;
         }
 
-        if (player.GetComponent<PlayerController>().hasItem && !player.GetComponent<PlayerController>().canPickup)
+        // When the player has an item, throw it
+        if (player.GetComponent<PlayerController>().hasItem && player.GetComponent<PlayerController>().hasThrown)
         {
             player.GetComponent<PlayerController>().hasItem = false;
-            IsPickupAllowed = false;
             Throw();
         }
     }
@@ -87,11 +88,11 @@ public class ItemController : MonoBehaviour
             // Attach the item to the player that picked it up
             this.transform.SetParent(player.transform);
             // Put the item in front of the player depending on which team
-            if (playerNum / 2 == 0) // Left team
+            if (itemNum / 2 == 0) // Left team
             {
                 this.transform.position = new Vector2(player.transform.position.x + 1, player.transform.position.y);
             }
-            else if (playerNum / 2 == 1)
+            else if (itemNum / 2 == 1) // Right team
             {
                 this.transform.position = new Vector2(player.transform.position.x - 1, player.transform.position.y);
             }
@@ -112,12 +113,14 @@ public class ItemController : MonoBehaviour
 
         // Start moving the item (throw it)
         // Direction depends on who threw it
-        if (playerNum / 2 == 0) // Left team
+        if (itemNum / 2 == 0) // Left team
         {
+            // This is where custom throws would go
             rb.linearVelocity = Vector2.right * throwSpeed;
         }
-        else if (playerNum / 2 == 1) // Right team
+        else if (itemNum / 2 == 1) // Right team
         {
+            // This is where custom throws would go
             rb.linearVelocity = Vector2.left * throwSpeed;
         }
         else
