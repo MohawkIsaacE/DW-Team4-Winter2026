@@ -1,3 +1,4 @@
+using NUnit.Framework.Internal.Commands;
 using UnityEngine;
 
 public class ItemController : MonoBehaviour
@@ -10,10 +11,13 @@ public class ItemController : MonoBehaviour
     private int playerNum;
     private bool isLeftTeam;
     public bool hasBeenThrown;
+    private float distanceTimer;
+    private bool hasSpawnedChips;
 
     public ItemData data;
 
     public GameLogic gameLogic;
+    public GameObject chipPrefab;
     [SerializeField] public Rigidbody2D rb { get; private set; }
     [SerializeField] public float throwSpeed { get; private set; } = 20f;
 
@@ -23,11 +27,29 @@ public class ItemController : MonoBehaviour
         IsPickupAllowed = true;
         rb = GetComponent<Rigidbody2D>();
         gameLogic = GameObject.Find("GameManager").GetComponent<GameLogic>();
+        hasSpawnedChips = false;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (hasSpawnedChips) return;
+
+        // Stop moving the item after a certain amount of time (non-variable throw distance)
+        if (hasBeenThrown && distanceTimer >= 0)
+        {
+            distanceTimer -= Time.deltaTime;
+        }
+        else
+        {
+            rb.linearVelocity = Vector2.zero;
+            if (data.itemName == Item.Chips)
+            {
+                SpawnChipHazards();
+                hasSpawnedChips = true;
+            }
+        }
+
         if (player == null) return;
         if (hasBeenThrown) return;
 
@@ -61,6 +83,7 @@ public class ItemController : MonoBehaviour
         {
             player.GetComponent<PlayerController>().hasItem = false;
             Throw();
+            distanceTimer = 1f;
         }
     }
 
@@ -92,6 +115,7 @@ public class ItemController : MonoBehaviour
             {
                 player.GetComponent<PlayerController>().isSpicy = true;
                 player.GetComponent<PlayerController>().spicyTimer = 5f;
+                // The player needs a way to tell they are spicy - smoke maybe?
             }
 
             gameLogic.UpdateScores();
@@ -99,12 +123,13 @@ public class ItemController : MonoBehaviour
         else if (collision.gameObject.CompareTag("Player"))
         {
             player = collision.gameObject;
+            // Maybe add VFX for players getting hit
         }
 
         if (collision.gameObject.CompareTag("Wall"))
         {
-            
             Destroy(gameObject);
+            // Maybe add some VFX for when an item hits a wall
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
@@ -175,6 +200,21 @@ public class ItemController : MonoBehaviour
     private void ThrowPizza()
     {
         // Detect if player is moving up, down, or not at all
+
+        // TEMP
+        // Direction depends on who threw it
+        if (isLeftTeam) // Left team
+        {
+            rb.linearVelocity = Vector2.right * throwSpeed;
+        }
+        else if (!isLeftTeam) // Right team
+        {
+            rb.linearVelocity = Vector2.left * throwSpeed;
+        }
+        else
+        {
+            Debug.Log("Error: No player found");
+        }
     }
 
     private void ThrowDonut()
@@ -213,6 +253,30 @@ public class ItemController : MonoBehaviour
 
     private void ThrowChips()
     {
+        // TEMP
+        // Direction depends on who threw it
+        if (isLeftTeam) // Left team
+        {
+            rb.linearVelocity = Vector2.right * throwSpeed;
+        }
+        else if (!isLeftTeam) // Right team
+        {
+            rb.linearVelocity = Vector2.left * throwSpeed;
+        }
+        else
+        {
+            Debug.Log("Error: No player found");
+        }
 
+        // Throw out a bag of chips that explodes into a ground hazard
+    }
+
+    private void SpawnChipHazards()
+    {
+        // Spawn 5 chips in random directions
+        for (int i = 0; i < 5; i++)
+        {
+            Instantiate(chipPrefab, gameObject.transform);
+        }
     }
 }

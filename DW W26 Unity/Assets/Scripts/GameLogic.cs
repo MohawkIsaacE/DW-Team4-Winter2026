@@ -46,16 +46,21 @@ public class GameLogic : MonoBehaviour
 
         // Randomly spawn a new item for each time at an interval
         // More items get added as the game progresses
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (newItemTimer >= 3f)
         {
             // Spawn item on the left side
-            newItemLeft = Instantiate(items[0], itemSpawnPoints[0].transform.position, Quaternion.identity);
+            newItemLeft = Instantiate(items[Random.Range(0, items.Length)], itemSpawnPoints[0].transform.position, Quaternion.identity);
             newItemLeft.transform.SetParent(GameObject.Find("ItemStorage").transform);
 
             // Spawn item on the right side
-            newItemRight = Instantiate(items[0], itemSpawnPoints[1].transform.position, Quaternion.identity);
+            newItemRight = Instantiate(items[Random.Range(0, items.Length)], itemSpawnPoints[1].transform.position, Quaternion.identity);
             newItemRight.transform.SetParent(GameObject.Find("ItemStorage").transform);
+
+            // Reset the spawn timer
+            newItemTimer = 0;
         }
+
+        newItemTimer += Time.deltaTime;
     }
 
     public void UpdateScores()

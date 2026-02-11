@@ -105,9 +105,10 @@ public class PlayerController : MonoBehaviour
         // Using force to move
         Vector2 moveForce = moveValue * MoveSpeed;
 
+        // Invert controls if the player is spicy
         if (isSpicy) moveForce = -moveForce;
 
-        // Apply fraction of force each frame
+        // Apply force each frame
         Rigidbody2D.AddForce(moveForce, ForceMode2D.Impulse);
     }
 
