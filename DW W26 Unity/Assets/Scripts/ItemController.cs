@@ -9,6 +9,8 @@ public class ItemController : MonoBehaviour
     private int itemNum;
     private int playerNum;
     public bool hasBeenThrown;
+
+    public GameLogic gameLogic;
     [SerializeField] public Rigidbody2D rb { get; private set; }
     [SerializeField] public float throwSpeed { get; private set; } = 20f;
 
@@ -17,6 +19,7 @@ public class ItemController : MonoBehaviour
     {
         IsPickupAllowed = true;
         rb = GetComponent<Rigidbody2D>();
+        gameLogic = GameObject.Find("GameManager").GetComponent<GameLogic>();
     }
 
     // Update is called once per frame
@@ -51,16 +54,19 @@ public class ItemController : MonoBehaviour
             {
                 Destroy(gameObject);
                 // add points to left team
+                gameLogic.Team1Score += 1;
             }
             else if (itemNum / 2 == 1) // Right team
             {
                 Destroy(gameObject);
                 // add points to right team
+                gameLogic.Team2Score += 1;
             }
             else
             {
                 Debug.Log("Error: No player found");
             }
+            gameLogic.UpdateScores();
         }
         else if (collision.gameObject.CompareTag("Player"))
         {
