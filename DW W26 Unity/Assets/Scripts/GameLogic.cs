@@ -10,8 +10,7 @@ public class GameLogic : MonoBehaviour
     [SerializeField] public TextMeshProUGUI Team1ScoreText;
     [SerializeField] public TextMeshProUGUI Team2ScoreText;
 
-    public UnityEvent Team1Point;
-    public UnityEvent Team2Point;
+    [SerializeField] public float gameTime {  get; private set; }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -23,7 +22,8 @@ public class GameLogic : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        // Randomly spawn a new item for each time at an interval
+        // More items get added as the game progresses
     }
 
     public void UpdateScores()

@@ -23,6 +23,8 @@ public class PlayerController : MonoBehaviour
     // Player-item interaction
     public bool hasItem;
     private GameObject item;
+    public bool isSpicy;
+    public float spicyTimer;
 
     // Assign color value on spawn from main spawner
     public void AssignColor(Color color)
@@ -72,6 +74,16 @@ public class PlayerController : MonoBehaviour
             // Throw the item you are holding
             hasThrown = true;
         }
+
+        // Lower the spicy timer if player is spicy
+        if (isSpicy && spicyTimer > 0)
+        {
+            spicyTimer -= Time.deltaTime;
+        }
+        else
+        {
+            isSpicy = false;
+        }
     }
 
     // Runs each phsyics update
@@ -91,18 +103,12 @@ public class PlayerController : MonoBehaviour
         Vector2 moveValue = InputActionMove.ReadValue<Vector2>();
 
         // Using force to move
-        Vector2 moveForce = moveValue * MoveSpeed;        
+        Vector2 moveForce = moveValue * MoveSpeed;
+
+        if (isSpicy) moveForce = -moveForce;
 
         // Apply fraction of force each frame
         Rigidbody2D.AddForce(moveForce, ForceMode2D.Impulse);
-
-        // JUMP - review Update()
-        if (DoJump)
-        {
-            // Apply all force immediately
-            Rigidbody2D.AddForceY(JumpForce, ForceMode2D.Impulse);
-            DoJump = false;
-        }
     }
 
     // OnValidate runs after any change in the inspector for this script.

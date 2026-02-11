@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -1287759540171150116}
   - component: {fileID: 5570743172940164300}
   m_Layer: 0
-  m_Name: Pizza
+  m_Name: Item_Chips
   m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -80,7 +80,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.9811321, g: 0.7229643, b: 0.4026344, a: 1}
+  m_Color: {r: 0.98039216, g: 0.97524405, b: 0.40392157, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -165,4 +165,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76e570b00de3d0647b758f16743955b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsPickupAllowed: 0
   hasBeenThrown: 0
+  data:
+    itemName: 3
+  gameLogic: {fileID: 0}

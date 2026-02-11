@@ -8,7 +8,10 @@ public class ItemController : MonoBehaviour
     private GameObject player;
     private int itemNum;
     private int playerNum;
+    private bool isLeftTeam;
     public bool hasBeenThrown;
+
+    public ItemData data;
 
     public GameLogic gameLogic;
     [SerializeField] public Rigidbody2D rb { get; private set; }
@@ -26,6 +29,7 @@ public class ItemController : MonoBehaviour
     void Update()
     {
         if (player == null) return;
+        if (hasBeenThrown) return;
 
         // When the player has no item and presses the pickup key, pick up the item
         if (IsPickupAllowed && !player.GetComponent<PlayerController>().hasItem && player.GetComponent<PlayerController>().canPickup)
@@ -33,6 +37,21 @@ public class ItemController : MonoBehaviour
             player.GetComponent<PlayerController>().hasItem = true;
             playerNum = player.GetComponent<PlayerController>().PlayerNumber;
             itemNum = playerNum;
+
+            // Check which player team has picked up the item
+            if (itemNum / 2 == 0) // Left team
+            {
+                isLeftTeam = true;
+            }
+            else if (itemNum / 2 == 1) // Right team
+            {
+                isLeftTeam = false;
+            }
+            else
+            {
+                Debug.Log("Error: No team found");
+            }
+
             PickUp();
             IsPickupAllowed = false;
         }
@@ -50,13 +69,14 @@ public class ItemController : MonoBehaviour
         // Check if item has been thrown yet first
         if (collision.gameObject.CompareTag("Player") && hasBeenThrown)
         {
-            if (itemNum / 2 == 0) // Left team
+            player = collision.gameObject;
+            if (isLeftTeam) // Left team
             {
                 Destroy(gameObject);
                 // add points to left team
                 gameLogic.Team1Score += 1;
             }
-            else if (itemNum / 2 == 1) // Right team
+            else if (!isLeftTeam)
             {
                 Destroy(gameObject);
                 // add points to right team
@@ -66,6 +86,14 @@ public class ItemController : MonoBehaviour
             {
                 Debug.Log("Error: No player found");
             }
+
+            // Spicy logic
+            if (data.itemName == Item.Spicy)
+            {
+                player.GetComponent<PlayerController>().isSpicy = true;
+                player.GetComponent<PlayerController>().spicyTimer = 5f;
+            }
+
             gameLogic.UpdateScores();
         }
         else if (collision.gameObject.CompareTag("Player"))
@@ -75,6 +103,7 @@ public class ItemController : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Wall"))
         {
+            
             Destroy(gameObject);
         }
     }
@@ -94,12 +123,14 @@ public class ItemController : MonoBehaviour
             // Attach the item to the player that picked it up
             this.transform.SetParent(player.transform);
             // Put the item in front of the player depending on which team
-            if (itemNum / 2 == 0) // Left team
+            if (isLeftTeam) // Left team
             {
+                // To the right of player
                 this.transform.position = new Vector2(player.transform.position.x + 1, player.transform.position.y);
             }
-            else if (itemNum / 2 == 1) // Right team
+            else if (!isLeftTeam) // Right team
             {
+                // To the left of player
                 this.transform.position = new Vector2(player.transform.position.x - 1, player.transform.position.y);
             }
             else
@@ -118,20 +149,70 @@ public class ItemController : MonoBehaviour
         hasBeenThrown = true;
 
         // Start moving the item (throw it)
-        // Direction depends on who threw it
-        if (itemNum / 2 == 0) // Left team
+
+        if (data.itemName == Item.Pizza)
         {
-            // This is where custom throws would go
+            ThrowPizza();
+        }
+        else if (data.itemName == Item.Donut)
+        {
+            ThrowDonut();
+        }
+        else if (data.itemName == Item.Spicy)
+        {
+            ThrowSpicy();
+        }
+        else if (data.itemName == Item.Chips)
+        {
+            ThrowChips();
+        }
+        else
+        {
+            Debug.Log($"This item has no name! {this.gameObject.name}");
+        }
+    }
+
+    private void ThrowPizza()
+    {
+        // Detect if player is moving up, down, or not at all
+    }
+
+    private void ThrowDonut()
+    {
+        // Direction depends on who threw it
+        if (isLeftTeam) // Left team
+        {
             rb.linearVelocity = Vector2.right * throwSpeed;
         }
-        else if (itemNum / 2 == 1) // Right team
+        else if (!isLeftTeam) // Right team
         {
-            // This is where custom throws would go
             rb.linearVelocity = Vector2.left * throwSpeed;
         }
         else
         {
             Debug.Log("Error: No player found");
         }
+    }
+
+    private void ThrowSpicy()
+    {
+        // Direction depends on who threw it
+        if (isLeftTeam) // Left team
+        {
+            rb.linearVelocity = Vector2.right * throwSpeed;
+        }
+        else if (!isLeftTeam) // Right team
+        {
+            rb.linearVelocity = Vector2.left * throwSpeed;
+        }
+        else
+        {
+            Debug.Log("Error: No player found");
+        }
+    }
+
+    private void ThrowChips()
+    {
+
     }
 }
