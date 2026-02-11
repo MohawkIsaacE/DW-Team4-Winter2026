@@ -1,3 +1,4 @@
+using NUnit.Framework;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
@@ -15,6 +16,12 @@ public class GameLogic : MonoBehaviour
     [SerializeField] public TextMeshProUGUI timer;
     [SerializeField] public float gameTime { get; private set; }
     private float newItemTimer;
+
+    [Header("Item Spawning")]
+    public GameObject[] items = new GameObject[4];
+    private GameObject newItemLeft;
+    private GameObject newItemRight;
+    [field: SerializeField] public Transform[] itemSpawnPoints { get; private set; }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -39,6 +46,16 @@ public class GameLogic : MonoBehaviour
 
         // Randomly spawn a new item for each time at an interval
         // More items get added as the game progresses
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            // Spawn item on the left side
+            newItemLeft = Instantiate(items[0], itemSpawnPoints[0].transform.position, Quaternion.identity);
+            newItemLeft.transform.SetParent(GameObject.Find("ItemStorage").transform);
+
+            // Spawn item on the right side
+            newItemRight = Instantiate(items[0], itemSpawnPoints[1].transform.position, Quaternion.identity);
+            newItemRight.transform.SetParent(GameObject.Find("ItemStorage").transform);
+        }
     }
 
     public void UpdateScores()
