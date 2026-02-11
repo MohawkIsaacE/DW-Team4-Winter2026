@@ -11,7 +11,9 @@ public class ItemChipBehaivour : MonoBehaviour
     {
         direction = Random.insideUnitCircle;
         rb = GetComponent<Rigidbody2D>();
-        moveTimer = 1f;
+        // Magic number - adjust until it feels right
+        // Updated Wednesday 3:42pm
+        moveTimer = 1.2f;
     }
 
     // Update is called once per frame
@@ -20,8 +22,7 @@ public class ItemChipBehaivour : MonoBehaviour
         // Move in the direction chosen for 1 second, then stop
         if (moveTimer > 0)
         {
-            rb.AddForce(direction * 2, ForceMode2D.Impulse);
-            //rb.linearVelocity = direction * 2;
+            rb.linearVelocity = direction * 2;
             moveTimer -= Time.deltaTime;
         }
         else
