@@ -776,6 +776,8 @@ MonoBehaviour:
   - {r: 0.031846523, g: 0, b: 1, a: 1}
   - {r: 1, g: 0.5668886, b: 0, a: 1}
   - {r: 0.37434292, g: 0, b: 1, a: 1}
+  <PlayerCount>k__BackingField: 0
+  playerSlots: 000000000000
 --- !u!114 &892251503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -877,8 +879,8 @@ Canvas:
   m_GameObject: {fileID: 916337142}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 1681613933}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -1599,8 +1601,8 @@ Canvas:
   m_GameObject: {fileID: 1822840146}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 961739752}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
