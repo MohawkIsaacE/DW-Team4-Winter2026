@@ -25,6 +25,7 @@ public class PlayerController : MonoBehaviour
     private GameObject item;
     public bool isSpicy;
     public float spicyTimer;
+    public float playerPoints;
 
     // Assign color value on spawn from main spawner
     public void AssignColor(Color color)

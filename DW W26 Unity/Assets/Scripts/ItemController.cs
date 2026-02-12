@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class ItemController : MonoBehaviour
@@ -93,6 +94,15 @@ public class ItemController : MonoBehaviour
                 player.GetComponent<PlayerController>().isSpicy = true;
                 player.GetComponent<PlayerController>().spicyTimer = 5f;
             }
+
+            /*
+            // Individual Player score
+            GameObject[] playerScore = GameObject.FindGameObjectsWithTag("Player");
+            
+            for (int i = 0; i < 5; i++)
+            {
+                   
+            }*/
 
             gameLogic.UpdateScores();
         }
