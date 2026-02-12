@@ -4,20 +4,12 @@ using UnityEngine.SceneManagement;
 
 public class GameOver : MonoBehaviour
 {
-    private PlayerInput PlayerInput;
-    private InputAction InputActionInteract;
-
-    private void Start()
-    {
-        InputActionInteract = PlayerInput.actions.FindAction($"Player/Attack");
-    }
-
     // Update is called once per frame
     void Update()
     {
-        if (InputActionInteract.WasPressedThisFrame())
+        if (Input.GetButtonDown("Fire2"))
         {
-            SceneManager.LoadScene("IsaacTestScene");
+            SceneManager.LoadScene("TitleScreenScene");
         }
     }
 }
