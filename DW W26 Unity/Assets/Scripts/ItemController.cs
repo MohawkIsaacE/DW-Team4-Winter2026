@@ -83,7 +83,7 @@ public class ItemController : MonoBehaviour
         {
             player.GetComponent<PlayerController>().hasItem = false;
             Throw();
-            distanceTimer = 1f;
+            distanceTimer = 2f; // About half way with 20f throwSpeed
         }
     }
 
