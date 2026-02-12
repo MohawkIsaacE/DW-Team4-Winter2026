@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: e3f49b9292d80964d951f802ae84be4b
+guid: 92157cff0ce8e2c459e607e09ceb9ee2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -285346849858095890
-    second: chip_0
+      213: 7057298679567296909
+    second: Donut Throw_0
+  - first:
+      213: -4307745873268082397
+    second: Donut Throw_1
+  - first:
+      213: 2922308313885776886
+    second: Donut Throw_2
+  - first:
+      213: -2022455831969529750
+    second: Donut Throw_3
+  - first:
+      213: -2785866069487946651
+    second: Donut Throw_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +63,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,13 +112,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: chip_0
+      name: Donut Throw_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 15
-        height: 16
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +127,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ee47e684d8e3a0cf0800000000000000
-      internalID: -285346849858095890
+      spriteID: d89217502cf80f160800000000000000
+      internalID: 7057298679567296909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Donut Throw_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3297331a3ffc734c0800000000000000
+      internalID: -4307745873268082397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Donut Throw_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fb155dadef1e8820800000000000000
+      internalID: 2922308313885776886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Donut Throw_3
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a600a81e22bcee3e0800000000000000
+      internalID: -2022455831969529750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Donut Throw_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5647b58e19d9659d0800000000000000
+      internalID: -2785866069487946651
       vertices: []
       indices: 
       edges: []
@@ -125,7 +225,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 13ff7d55fbfcfb140b27dd121416d6d6
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +235,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      chip_0: -285346849858095890
+      Donut Throw_0: 7057298679567296909
+      Donut Throw_1: -4307745873268082397
+      Donut Throw_2: 2922308313885776886
+      Donut Throw_3: -2022455831969529750
+      Donut Throw_4: -2785866069487946651
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

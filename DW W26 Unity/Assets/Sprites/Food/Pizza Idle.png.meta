@@ -1,25 +1,13 @@
 fileFormatVersion: 2
-guid: b51196406109a3548acd4c563424e42f
+guid: ac781f1c8b27b9a498200906c6e43df8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2454631135387727588
-    second: Splatter_0
+      213: -5688111090802315427
+    second: Pizza Idle_0
   - first:
-      213: -5919090430122801964
-    second: Splatter_1
-  - first:
-      213: 1993394545745100425
-    second: Splatter_2
-  - first:
-      213: -1030140325960086638
-    second: Splatter_3
-  - first:
-      213: 9158050845529435922
-    second: Splatter_4
-  - first:
-      213: -2913582023500941199
-    second: Splatter_5
+      213: 4070969700593845640
+    second: Pizza Idle_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -66,7 +54,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -115,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Splatter_0
+      name: Pizza Idle_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 16
-        height: 16
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,42 +118,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c19c990dcf56fedd0800000000000000
-      internalID: -2454631135387727588
+      spriteID: d5fa4cd8915cf01b0800000000000000
+      internalID: -5688111090802315427
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Splatter_1
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4d4cd1f4d9a2bdda0800000000000000
-      internalID: -5919090430122801964
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Splatter_2
+      name: Pizza Idle_1
       rect:
         serializedVersion: 2
         x: 32
-        y: 0
-        width: 16
-        height: 16
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,86 +140,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 98e765427c5f9ab10800000000000000
-      internalID: 1993394545745100425
+      spriteID: 885464faf5dfe7830800000000000000
+      internalID: 4070969700593845640
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Splatter_3
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 29b085ad4d434b1f0800000000000000
-      internalID: -1030140325960086638
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Splatter_4
+      name: Pizza Idle_2
       rect:
         serializedVersion: 2
         x: 64
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 21f6fbaf8bee71f70800000000000000
-      internalID: 9158050845529435922
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Splatter_5
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 17833412690e097d0800000000000000
-      internalID: -2913582023500941199
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Splatter_6
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 16
-        height: 16
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -262,8 +162,118 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0eba04d3730cd304d91e3dd1efaa0c54
-      internalID: -418422528
+      spriteID: 12b79fc87ccd5d64cabab8331d233fff
+      internalID: 834426151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza Idle_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f97d581d2f300c14fb15a4304cdf3990
+      internalID: 274362222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza Idle_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2999485378726d4d985a5c96fc8b4f8
+      internalID: 1250127957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza Idle_5
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28d74705100848b48a54c6357c7070eb
+      internalID: -1633933876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza Idle_6
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4625791e0acebd847b16f609a55fe12e
+      internalID: 624310701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza Idle_7
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 933180ae4eefd8c4b8ee3649832a2926
+      internalID: -1791173386
       vertices: []
       indices: 
       edges: []
@@ -272,7 +282,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: d8338307c0dea82489b8d18e2332ad0a
+    spriteID: 462a2d5638c93704db44797a38bdaa44
     internalID: 0
     vertices: []
     indices: 
@@ -282,13 +292,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Splatter_0: -2454631135387727588
-      Splatter_1: -5919090430122801964
-      Splatter_2: 1993394545745100425
-      Splatter_3: -1030140325960086638
-      Splatter_4: 9158050845529435922
-      Splatter_5: -2913582023500941199
-      Splatter_6: -418422528
+      Pizza Idle_0: -5688111090802315427
+      Pizza Idle_1: 4070969700593845640
+      Pizza Idle_2: 834426151
+      Pizza Idle_3: 274362222
+      Pizza Idle_4: 1250127957
+      Pizza Idle_5: -1633933876
+      Pizza Idle_6: 624310701
+      Pizza Idle_7: -1791173386
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

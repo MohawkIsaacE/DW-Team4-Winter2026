@@ -1,46 +1,82 @@
 fileFormatVersion: 2
-guid: bfef46cc004cdbd42b40566eb88c9c62
+guid: 80f42fc32f3688844909dd34c9d0edf1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1967869560384024536
-    second: Spicey_0
+      213: -6893804069562054182
+    second: Pizza Splatter_0
   - first:
-      213: 1261272997550530415
-    second: Spicey_1
+      213: -6438550246621445686
+    second: Pizza Splatter_1
   - first:
-      213: 3436509706037261153
-    second: Spicey_2
+      213: 4913296099070948643
+    second: Pizza Splatter_2
   - first:
-      213: -350912582454244995
-    second: Spicey_3
+      213: -8367513570727425790
+    second: Pizza Splatter_3
   - first:
-      213: -6109714847189180363
-    second: Spicey_4
+      213: -4743295671426728585
+    second: Pizza Splatter_4
   - first:
-      213: -3401064925411506711
-    second: Spicey_5
+      213: -9219152221666732546
+    second: Pizza Splatter_5
   - first:
-      213: -3313389213753654859
-    second: Spicey_6
+      213: -2096146419301400891
+    second: Pizza Splatter_6
   - first:
-      213: -3983484669796126048
-    second: Spicey_7
+      213: -706225700429253063
+    second: Pizza Splatter_7
   - first:
-      213: 5501182172142445121
-    second: Spicey_8
+      213: 5545387025956648615
+    second: Pizza Splatter_8
   - first:
-      213: 3295450130893894508
-    second: Spicey_9
+      213: -3823123649594356960
+    second: Pizza Splatter_9
   - first:
-      213: -2415333989218812961
-    second: Spicey_10
+      213: 4236466945681890600
+    second: Pizza Splatter_10
   - first:
-      213: 7109560642300718144
-    second: Spicey_11
+      213: 8143768706330811697
+    second: Pizza Splatter_11
   - first:
-      213: 8980942370776499185
-    second: Spicey_12
+      213: -3508947812680291032
+    second: Pizza Splatter_12
+  - first:
+      213: 4588353827555369
+    second: Pizza Splatter_13
+  - first:
+      213: -1227477725052749181
+    second: Pizza Splatter_14
+  - first:
+      213: -690506450240820119
+    second: Pizza Splatter_15
+  - first:
+      213: 6029422890732375611
+    second: Pizza Splatter_16
+  - first:
+      213: -2005586595854215383
+    second: Pizza Splatter_17
+  - first:
+      213: 3264314051318783754
+    second: Pizza Splatter_18
+  - first:
+      213: -357955813816852759
+    second: Pizza Splatter_19
+  - first:
+      213: 5579413261630990881
+    second: Pizza Splatter_20
+  - first:
+      213: -9161106285029573774
+    second: Pizza Splatter_21
+  - first:
+      213: -7463867727201852468
+    second: Pizza Splatter_22
+  - first:
+      213: 5907101352215013830
+    second: Pizza Splatter_23
+  - first:
+      213: 8656642007794152946
+    second: Pizza Splatter_24
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -136,7 +172,205 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Spicey_0
+      name: Pizza Splatter_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad98c9249b94450a0800000000000000
+      internalID: -6893804069562054182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza Splatter_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac100a1e9aca5a6a0800000000000000
+      internalID: -6438550246621445686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza Splatter_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 325bf6535c88f2440800000000000000
+      internalID: 4913296099070948643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza Splatter_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 209088b8dbe90eb80800000000000000
+      internalID: -8367513570727425790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza Splatter_4
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77d36f7c7bd6c2eb0800000000000000
+      internalID: -4743295671426728585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza Splatter_5
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef51d4946edfe0080800000000000000
+      internalID: -9219152221666732546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza Splatter_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ce355000fdf8e2e0800000000000000
+      internalID: -2096146419301400891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza Splatter_7
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 936b9aa977bf236f0800000000000000
+      internalID: -706225700429253063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza Splatter_8
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a6b4309e1c25fc40800000000000000
+      internalID: 5545387025956648615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza Splatter_9
       rect:
         serializedVersion: 2
         x: 0
@@ -151,206 +385,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8209101af09b0b4e0800000000000000
-      internalID: -1967869560384024536
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spicey_1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f6f9ac7db11f08110800000000000000
-      internalID: 1261272997550530415
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spicey_2
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1637887ce5fe0bf20800000000000000
-      internalID: 3436509706037261153
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spicey_3
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d79899f8dde412bf0800000000000000
-      internalID: -350912582454244995
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spicey_4
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 530eb5697bee53ba0800000000000000
-      internalID: -6109714847189180363
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spicey_5
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9e58ece487dfcc0d0800000000000000
-      internalID: -3401064925411506711
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spicey_6
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5b14a9fa01a7402d0800000000000000
-      internalID: -3313389213753654859
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spicey_7
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0a276985cc1d7b8c0800000000000000
-      internalID: -3983484669796126048
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spicey_8
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 142234ff900285c40800000000000000
-      internalID: 5501182172142445121
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spicey_9
-      rect:
-        serializedVersion: 2
-        x: 288
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c63f1fa1f6acbbd20800000000000000
-      internalID: 3295450130893894508
+      spriteID: 02b8885eb4981fac0800000000000000
+      internalID: -3823123649594356960
       vertices: []
       indices: 
       edges: []
@@ -359,7 +395,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 103546b67a0ae524389c28ec123fe8fd
+    spriteID: 542f1be73182cac42bdf7f21f42c314d
     internalID: 0
     vertices: []
     indices: 
@@ -369,16 +405,16 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Spicey_0: -1967869560384024536
-      Spicey_1: 1261272997550530415
-      Spicey_2: 3436509706037261153
-      Spicey_3: -350912582454244995
-      Spicey_4: -6109714847189180363
-      Spicey_5: -3401064925411506711
-      Spicey_6: -3313389213753654859
-      Spicey_7: -3983484669796126048
-      Spicey_8: 5501182172142445121
-      Spicey_9: 3295450130893894508
+      Pizza Splatter_0: -6893804069562054182
+      Pizza Splatter_1: -6438550246621445686
+      Pizza Splatter_2: 4913296099070948643
+      Pizza Splatter_3: -8367513570727425790
+      Pizza Splatter_4: -4743295671426728585
+      Pizza Splatter_5: -9219152221666732546
+      Pizza Splatter_6: -2096146419301400891
+      Pizza Splatter_7: -706225700429253063
+      Pizza Splatter_8: 5545387025956648615
+      Pizza Splatter_9: -3823123649594356960
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
