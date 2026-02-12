@@ -87,7 +87,7 @@ public class GameLogic : MonoBehaviour
         if (newItemTimer >= 2f)
         {
             // Spawn item on the left side
-            newItemLeft = Instantiate(items[Random.Range(0, currentItemVariety)], itemSpawnPoints[0].transform.position, Quaternion.identity);
+            newItemLeft = Instantiate(items[3], itemSpawnPoints[0].transform.position, Quaternion.identity);
             newItemLeft.transform.SetParent(GameObject.Find("ItemStorage").transform);
 
             // Spawn item on the right side

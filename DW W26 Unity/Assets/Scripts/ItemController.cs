@@ -19,7 +19,7 @@ public class ItemController : MonoBehaviour
     public GameLogic gameLogic;
     public GameObject chipPrefab;
     [SerializeField] public Rigidbody2D rb { get; private set; }
-    [SerializeField] public float throwSpeed { get; private set; } = 40f;
+    [SerializeField] public float throwSpeed { get; private set; } = 60f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
