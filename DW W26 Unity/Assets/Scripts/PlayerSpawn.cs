@@ -5,10 +5,38 @@ public class PlayerSpawn : MonoBehaviour
 {
     [field: SerializeField] public Transform[] SpawnPoints { get; private set; }
     [field: SerializeField] public Color[] PlayerColors { get; private set; }
-    public int PlayerCount { get; private set; }
+    [field: SerializeField] public int PlayerCount { get; private set; }
+    public bool[] playerSlots = new bool[6];
 
     public void OnPlayerJoined(PlayerInput playerInput)
     {
+        // Increment player count
+        PlayerCount++;
+
+        //for each slot in player slot, count up, if one is false then make it true and then stop
+        //if one is true then keep counting until one is false
+        foreach (bool slot in playerSlots)
+        {
+            int slotIndex = 0;
+            if (slot == false)
+            {
+                playerSlots[slotIndex] = true;
+                slotIndex++;
+                break;
+            }
+            if (slot == true)
+            {
+                slotIndex++;
+                return;
+            }
+            else
+            {
+                playerSlots[slotIndex] = true;
+                PlayerCount = slotIndex;
+                break;
+            }
+        }
+
         int maxPlayerCount = Mathf.Min(SpawnPoints.Length, PlayerColors.Length);
         if (maxPlayerCount < 1)
         {
@@ -35,9 +63,6 @@ public class PlayerSpawn : MonoBehaviour
         playerInput.transform.rotation = SpawnPoints[PlayerCount].rotation;
         Color color = PlayerColors[PlayerCount];
 
-        // Increment player count
-        PlayerCount++;
-
         // Set up player controller
         PlayerController playerController = playerInput.gameObject.GetComponent<PlayerController>();
         playerController.AssignPlayerInputDevice(playerInput);
@@ -49,6 +74,27 @@ public class PlayerSpawn : MonoBehaviour
     {
         // Not handling anything right now.
         Debug.Log("Player left...");
-        PlayerCount--;
+
+        foreach (bool slot in playerSlots)
+        {
+            int slotIndex = 0;
+            if (slot == true)
+            {
+                playerSlots[slotIndex] = false;
+                PlayerCount = slotIndex;
+                break;
+            }
+            if (slot == false)
+            {
+                slotIndex++;
+                return;
+            }
+            else
+            {
+                playerSlots[slotIndex] = false;
+                PlayerCount = slotIndex;
+                break;
+            }
+        }
     }
 }

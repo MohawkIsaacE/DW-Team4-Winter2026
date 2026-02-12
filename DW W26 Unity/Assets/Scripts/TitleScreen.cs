@@ -46,21 +46,18 @@ public class TitleScreenReadyCheck : MonoBehaviour
 
             //first part: sets players to ready if they press the west button or left click
             //second part: disconnects player and resets values if they press the east button or the c key
-            foreach (var p in players)
-            {
-                if (playerInput[i] != null)
+            if (playerInput[i] != null)
                 {
-                    if (SceneManager.GetActiveScene() == titleScene && playerInput[i].actions["Attack"].IsPressed())
-                    {
-                        playerReady[i] = true;
-                    }
+                if (SceneManager.GetActiveScene() == titleScene && playerInput[i].actions["Attack"].IsPressed())
+                {
+                    playerReady[i] = true;
+                }
 
-                    if (SceneManager.GetActiveScene() == titleScene && playerInput[i].actions["Crouch"].IsPressed())
-                    {
-                        Destroy(players[i]);
-                        playerReady[i] = false;
-                        playerInput[i] = null;
-                    }
+                if (SceneManager.GetActiveScene() == titleScene && playerInput[i].actions["Crouch"].IsPressed())
+                {
+                    playerReady[i] = false;
+                    playerInput[i] = null;
+                    Destroy(players[i]);
                 }
             }
 
