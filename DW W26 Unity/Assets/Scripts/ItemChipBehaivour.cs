@@ -30,4 +30,16 @@ public class ItemChipBehaivour : MonoBehaviour
             rb.linearVelocity = Vector2.zero;
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            // Stun the player for a moment after they walk into a chip
+
+
+            // Get rid of the chip
+            Destroy(gameObject);
+        }
+    }
 }

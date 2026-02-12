@@ -28,6 +28,7 @@ public class ItemController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         gameLogic = GameObject.Find("GameManager").GetComponent<GameLogic>();
         hasSpawnedChips = false;
+        hasBeenThrown = false;
     }
 
     // Update is called once per frame
@@ -40,13 +41,19 @@ public class ItemController : MonoBehaviour
         {
             distanceTimer -= Time.deltaTime;
         }
-        else
+        else if (hasBeenThrown)
         {
             rb.linearVelocity = Vector2.zero;
+
+            if (data.itemName == Item.Donut) Destroy(gameObject);
+            if (data.itemName == Item.Pizza) Destroy(gameObject);
+            if (data.itemName == Item.Spicy) Destroy(gameObject);
+
             if (data.itemName == Item.Chips)
             {
                 SpawnChipHazards();
                 hasSpawnedChips = true;
+                Destroy(gameObject);
             }
         }
 
@@ -273,10 +280,13 @@ public class ItemController : MonoBehaviour
 
     private void SpawnChipHazards()
     {
+        GameObject newChip;
+
         // Spawn 5 chips in random directions
         for (int i = 0; i < 5; i++)
         {
-            Instantiate(chipPrefab, gameObject.transform);
+            newChip = Instantiate(chipPrefab, gameObject.transform);
+            newChip.transform.SetParent(GameObject.Find("ChipStorage").transform);
         }
     }
 }
