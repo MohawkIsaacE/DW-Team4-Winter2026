@@ -68,11 +68,11 @@ public class ItemController : MonoBehaviour
             itemNum = playerNum;
 
             // Check which player team has picked up the item
-            if (itemNum / 2 == 0) // Left team
+            if (itemNum % 2 == 0) // Left team
             {
                 isLeftTeam = true;
             }
-            else if (itemNum / 2 == 1) // Right team
+            else if (itemNum % 2 == 1) // Right team
             {
                 isLeftTeam = false;
             }
