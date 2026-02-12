@@ -19,7 +19,7 @@ public class ItemController : MonoBehaviour
     public GameLogic gameLogic;
     public GameObject chipPrefab;
     [SerializeField] public Rigidbody2D rb { get; private set; }
-    [SerializeField] public float throwSpeed { get; private set; } = 20f;
+    [SerializeField] public float throwSpeed { get; private set; } = 40f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -90,7 +90,7 @@ public class ItemController : MonoBehaviour
         if (player.GetComponent<PlayerController>().hasItem && player.GetComponent<PlayerController>().hasThrown)
         {
             player.GetComponent<PlayerController>().hasItem = false;
-            distanceTimer = 2f; // About half way with 20f throwSpeed
+            distanceTimer = 1f; // About half way with 20f throwSpeed
             Throw();
         }
     }
@@ -277,7 +277,7 @@ public class ItemController : MonoBehaviour
         {
             Debug.Log("Error: No player found");
         }
-        distanceTimer = 1f;
+        distanceTimer = 0.5f;
     }
 
     private void ThrowChips()
