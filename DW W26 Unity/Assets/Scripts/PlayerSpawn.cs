@@ -49,5 +49,6 @@ public class PlayerSpawn : MonoBehaviour
     {
         // Not handling anything right now.
         Debug.Log("Player left...");
+        PlayerCount--;
     }
 }
