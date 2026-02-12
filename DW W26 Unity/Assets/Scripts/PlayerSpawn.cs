@@ -13,8 +13,9 @@ public class PlayerSpawn : MonoBehaviour
         // Increment player count
         PlayerCount++;
 
-        //for each slot in player slot, count up, if one is false then make it true and then stop
-        //if one is true then keep counting until one is false
+        //for each slot in player slot, count through the slots
+        //if the slot is false then make it true and then stop
+        //if the slot is true then keep going up until a false slot and then make the slot true
         foreach (bool slot in playerSlots)
         {
             int slotIndex = 0;
@@ -75,6 +76,9 @@ public class PlayerSpawn : MonoBehaviour
         // Not handling anything right now.
         Debug.Log("Player left...");
 
+        //for each slot in player slot, count through the slots
+        //if the slot is true then make it false and then stop
+        //if the slot is false then keep going up until a true slot and then make the slot false
         foreach (bool slot in playerSlots)
         {
             int slotIndex = 0;
