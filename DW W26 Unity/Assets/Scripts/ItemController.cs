@@ -1,4 +1,4 @@
-using Unity.VisualScripting;
+using NUnit.Framework.Internal.Commands;
 using UnityEngine;
 
 public class ItemController : MonoBehaviour
@@ -11,10 +11,13 @@ public class ItemController : MonoBehaviour
     private int playerNum;
     private bool isLeftTeam;
     public bool hasBeenThrown;
+    private float distanceTimer;
+    private bool hasSpawnedChips;
 
     public ItemData data;
 
     public GameLogic gameLogic;
+    public GameObject chipPrefab;
     [SerializeField] public Rigidbody2D rb { get; private set; }
     [SerializeField] public float throwSpeed { get; private set; } = 20f;
 
@@ -24,11 +27,36 @@ public class ItemController : MonoBehaviour
         IsPickupAllowed = true;
         rb = GetComponent<Rigidbody2D>();
         gameLogic = GameObject.Find("GameManager").GetComponent<GameLogic>();
+        hasSpawnedChips = false;
+        hasBeenThrown = false;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (hasSpawnedChips) return;
+
+        // Stop moving the item after a certain amount of time (non-variable throw distance)
+        if (hasBeenThrown && distanceTimer >= 0)
+        {
+            distanceTimer -= Time.deltaTime;
+        }
+        else if (hasBeenThrown)
+        {
+            rb.linearVelocity = Vector2.zero;
+
+            if (data.itemName == Item.Donut) Destroy(gameObject);
+            if (data.itemName == Item.Pizza) Destroy(gameObject);
+            if (data.itemName == Item.Spicy) Destroy(gameObject);
+
+            if (data.itemName == Item.Chips)
+            {
+                SpawnChipHazards();
+                hasSpawnedChips = true;
+                Destroy(gameObject);
+            }
+        }
+
         if (player == null) return;
         if (hasBeenThrown) return;
 
@@ -55,6 +83,7 @@ public class ItemController : MonoBehaviour
 
             PickUp();
             IsPickupAllowed = false;
+            rb.linearVelocity = Vector2.zero;
         }
 
         // When the player has an item, throw it
@@ -62,9 +91,19 @@ public class ItemController : MonoBehaviour
         {
             player.GetComponent<PlayerController>().hasItem = false;
             Throw();
+            distanceTimer = 2f; // About half way with 20f throwSpeed
         }
     }
 
+    private void FixedUpdate()
+    {
+        // Move down the conveyor if it hasn't been picked up yet
+        if (IsPickupAllowed && !hasBeenThrown)
+        {
+            // Reset movement
+            rb.linearVelocity = Vector2.down * 5;
+        }
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         // Check if item has been thrown yet first
@@ -93,28 +132,21 @@ public class ItemController : MonoBehaviour
             {
                 player.GetComponent<PlayerController>().isSpicy = true;
                 player.GetComponent<PlayerController>().spicyTimer = 5f;
+                // The player needs a way to tell they are spicy - smoke maybe?
             }
-
-            /*
-            // Individual Player score
-            GameObject[] playerScore = GameObject.FindGameObjectsWithTag("Player");
-            
-            for (int i = 0; i < 5; i++)
-            {
-                   
-            }*/
 
             gameLogic.UpdateScores();
         }
         else if (collision.gameObject.CompareTag("Player"))
         {
             player = collision.gameObject;
+            // Maybe add VFX for players getting hit
         }
 
         if (collision.gameObject.CompareTag("Wall"))
         {
-            
             Destroy(gameObject);
+            // Maybe add some VFX for when an item hits a wall
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
@@ -158,6 +190,9 @@ public class ItemController : MonoBehaviour
         IsPickupAllowed = false;
         hasBeenThrown = true;
 
+        // Stop all movement first
+        rb.linearVelocity = Vector2.zero;
+
         // Start moving the item (throw it)
 
         if (data.itemName == Item.Pizza)
@@ -185,6 +220,21 @@ public class ItemController : MonoBehaviour
     private void ThrowPizza()
     {
         // Detect if player is moving up, down, or not at all
+
+        // TEMP
+        // Direction depends on who threw it
+        if (isLeftTeam) // Left team
+        {
+            rb.linearVelocity = Vector2.right * throwSpeed;
+        }
+        else if (!isLeftTeam) // Right team
+        {
+            rb.linearVelocity = Vector2.left * throwSpeed;
+        }
+        else
+        {
+            Debug.Log("Error: No player found");
+        }
     }
 
     private void ThrowDonut()
@@ -223,6 +273,33 @@ public class ItemController : MonoBehaviour
 
     private void ThrowChips()
     {
+        // TEMP
+        // Direction depends on who threw it
+        if (isLeftTeam) // Left team
+        {
+            rb.linearVelocity = Vector2.right * throwSpeed;
+        }
+        else if (!isLeftTeam) // Right team
+        {
+            rb.linearVelocity = Vector2.left * throwSpeed;
+        }
+        else
+        {
+            Debug.Log("Error: No player found");
+        }
 
+        // Throw out a bag of chips that explodes into a ground hazard
+    }
+
+    private void SpawnChipHazards()
+    {
+        GameObject newChip;
+
+        // Spawn 5 chips in random directions
+        for (int i = 0; i < 5; i++)
+        {
+            newChip = Instantiate(chipPrefab, gameObject.transform);
+            newChip.transform.SetParent(GameObject.Find("ChipStorage").transform);
+        }
     }
 }
