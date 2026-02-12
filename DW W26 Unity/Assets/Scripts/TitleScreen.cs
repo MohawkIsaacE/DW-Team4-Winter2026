@@ -55,7 +55,7 @@ public class TitleScreenReadyCheck : MonoBehaviour
 
                 if (SceneManager.GetActiveScene() == titleScene && playerInput[i].actions["Crouch"].IsPressed())
                 {
-                    players[i].SetActive(false);
+                    Destroy(players[i]);
                     playerReady[i] = false;
                     playerInput[i] = null;
                 }
