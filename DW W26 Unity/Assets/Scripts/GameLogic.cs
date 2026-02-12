@@ -14,7 +14,8 @@ public class GameLogic : MonoBehaviour
     [SerializeField] public TextMeshProUGUI Team2ScoreText;
 
     [Header("Game Time")]
-    [SerializeField] public TextMeshProUGUI timer;
+    [SerializeField] public TextMeshProUGUI timerLeft;
+    [SerializeField] public TextMeshProUGUI timerRight;
     [SerializeField] public float currentGameTime { get; private set; }
     private float maxGameTime = 180f; // 180f = 3 minutes
     private float newItemTimer;
@@ -45,7 +46,8 @@ public class GameLogic : MonoBehaviour
         int seconds = Mathf.FloorToInt(currentGameTime - minutes * 60);
         string gameTimeString = string.Format("{0:0}:{1:00}", minutes, seconds);
 
-        timer.text = $"Time: {gameTimeString}";
+        timerLeft.text = $"Time: {gameTimeString}";
+        timerRight.text = $"Time: {gameTimeString}";
 
         // Game end condition
         // When game time runs out
@@ -87,7 +89,7 @@ public class GameLogic : MonoBehaviour
         if (newItemTimer >= 2f)
         {
             // Spawn item on the left side
-            newItemLeft = Instantiate(items[3], itemSpawnPoints[0].transform.position, Quaternion.identity);
+            newItemLeft = Instantiate(items[Random.Range(0, currentItemVariety)], itemSpawnPoints[0].transform.position, Quaternion.identity);
             newItemLeft.transform.SetParent(GameObject.Find("ItemStorage").transform);
 
             // Spawn item on the right side
