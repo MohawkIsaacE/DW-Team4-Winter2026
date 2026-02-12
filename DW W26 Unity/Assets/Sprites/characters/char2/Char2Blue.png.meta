@@ -1,0 +1,923 @@
+fileFormatVersion: 2
+guid: 261327a82f27e804cb1f2ad4ee4684ff
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5763782114599773073
+    second: Char2Blue_0
+  - first:
+      213: -1756586089904983076
+    second: Char2Blue_1
+  - first:
+      213: -4186400405034736228
+    second: Char2Blue_2
+  - first:
+      213: 2051266830108988248
+    second: Char2Blue_3
+  - first:
+      213: -3851440145379201058
+    second: Char2Blue_4
+  - first:
+      213: 6078165005497714429
+    second: Char2Blue_5
+  - first:
+      213: 5819439506703166369
+    second: Char2Blue_6
+  - first:
+      213: -8544951408546155577
+    second: Char2Blue_7
+  - first:
+      213: -7766908030931157718
+    second: Char2Blue_8
+  - first:
+      213: -1983846761636156559
+    second: Char2Blue_9
+  - first:
+      213: 224904913597695964
+    second: Char2Blue_10
+  - first:
+      213: 1543802623656803838
+    second: Char2Blue_11
+  - first:
+      213: -1068564342632047601
+    second: Char2Blue_12
+  - first:
+      213: 319471151210588833
+    second: Char2Blue_13
+  - first:
+      213: 5973480034061858500
+    second: Char2Blue_14
+  - first:
+      213: 2492335981837970655
+    second: Char2Blue_15
+  - first:
+      213: -2144122765822061891
+    second: Char2Blue_16
+  - first:
+      213: -971355340720487682
+    second: Char2Blue_17
+  - first:
+      213: -1672660551594714411
+    second: Char2Blue_18
+  - first:
+      213: -3934502554965162661
+    second: Char2Blue_19
+  - first:
+      213: -4704740766114329461
+    second: Char2Blue_20
+  - first:
+      213: -4927816670006170279
+    second: Char2Blue_21
+  - first:
+      213: 2948586094294651033
+    second: Char2Blue_22
+  - first:
+      213: -8201610035792800218
+    second: Char2Blue_23
+  - first:
+      213: 6221095147236200440
+    second: Char2Blue_24
+  - first:
+      213: -8128448248919131618
+    second: Char2Blue_25
+  - first:
+      213: -296925148510291824
+    second: Char2Blue_26
+  - first:
+      213: 3215785746742410259
+    second: Char2Blue_27
+  - first:
+      213: -5542765195752578308
+    second: Char2Blue_28
+  - first:
+      213: 424265797285016725
+    second: Char2Blue_29
+  - first:
+      213: 1554118740675115644
+    second: Char2Blue_30
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Char2Blue_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 39
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 193287f9b411dff40800000000000000
+      internalID: 5763782114599773073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char2Blue_1
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 39
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd332dd024a5f97e0800000000000000
+      internalID: -1756586089904983076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char2Blue_2
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 39
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c956a5a130be6e5c0800000000000000
+      internalID: -4186400405034736228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char2Blue_3
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 0
+        width: 39
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 853103c5050977c10800000000000000
+      internalID: 2051266830108988248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char2Blue_4
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 0
+        width: 39
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edf6ef4f79fec8ac0800000000000000
+      internalID: -3851440145379201058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char2Blue_5
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 0
+        width: 39
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df6c6e67edaf95450800000000000000
+      internalID: 6078165005497714429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char2Blue_6
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 39
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1abaaec066dc2c050800000000000000
+      internalID: 5819439506703166369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char2Blue_7
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 0
+        width: 39
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c3f1ae87fb3a6980800000000000000
+      internalID: -8544951408546155577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char2Blue_8
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 0
+        width: 39
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2d3835fb46663490800000000000000
+      internalID: -7766908030931157718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char2Blue_9
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 0
+        width: 39
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17b2ed391e5f774e0800000000000000
+      internalID: -1983846761636156559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char2Blue_10
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 0
+        width: 39
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd70b3bc3d50f1300800000000000000
+      internalID: 224904913597695964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char2Blue_11
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 0
+        width: 39
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efd316a8e40bc6510800000000000000
+      internalID: 1543802623656803838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char2Blue_12
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 0
+        width: 39
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0c94c15462bb21f0800000000000000
+      internalID: -1068564342632047601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char2Blue_13
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 0
+        width: 39
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1aa64e3c15dfe6400800000000000000
+      internalID: 319471151210588833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char2Blue_14
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 0
+        width: 39
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c6352f217016e250800000000000000
+      internalID: 5973480034061858500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char2Blue_15
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 0
+        width: 39
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdc606ade5e869220800000000000000
+      internalID: 2492335981837970655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char2Blue_16
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 0
+        width: 39
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db2195c54bb8e32e0800000000000000
+      internalID: -2144122765822061891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char2Blue_17
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 0
+        width: 39
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef24dadc67d0582f0800000000000000
+      internalID: -971355340720487682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char2Blue_18
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 0
+        width: 39
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5da5368271489c8e0800000000000000
+      internalID: -1672660551594714411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char2Blue_19
+      rect:
+        serializedVersion: 2
+        x: 1232
+        y: 0
+        width: 39
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b554f6ba5c6d569c0800000000000000
+      internalID: -3934502554965162661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char2Blue_20
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 0
+        width: 39
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8cc473333765beb0800000000000000
+      internalID: -4704740766114329461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char2Blue_21
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 0
+        width: 39
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95da80ae8d0ec9bb0800000000000000
+      internalID: -4927816670006170279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char2Blue_22
+      rect:
+        serializedVersion: 2
+        x: 1424
+        y: 0
+        width: 40
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 990d6143e6b7be820800000000000000
+      internalID: 2948586094294651033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char2Blue_23
+      rect:
+        serializedVersion: 2
+        x: 1488
+        y: 0
+        width: 40
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6269a4e50270e2e80800000000000000
+      internalID: -8201610035792800218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char2Blue_24
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 0
+        width: 39
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ff8bec5315c55650800000000000000
+      internalID: 6221095147236200440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char2Blue_25
+      rect:
+        serializedVersion: 2
+        x: 1616
+        y: 0
+        width: 39
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1a770c4263f13f80800000000000000
+      internalID: -8128448248919131618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char2Blue_26
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 0
+        width: 39
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 098f92e862c11ebf0800000000000000
+      internalID: -296925148510291824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char2Blue_27
+      rect:
+        serializedVersion: 2
+        x: 1744
+        y: 0
+        width: 39
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31c78544914c0ac20800000000000000
+      internalID: 3215785746742410259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char2Blue_28
+      rect:
+        serializedVersion: 2
+        x: 1808
+        y: 0
+        width: 39
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf2e4c9db642413b0800000000000000
+      internalID: -5542765195752578308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char2Blue_29
+      rect:
+        serializedVersion: 2
+        x: 1872
+        y: 0
+        width: 39
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5947589ae7b43e500800000000000000
+      internalID: 424265797285016725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char2Blue_30
+      rect:
+        serializedVersion: 2
+        x: 1936
+        y: 0
+        width: 39
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7ab7b4b2c6519510800000000000000
+      internalID: 1554118740675115644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Char2Blue_0: 5763782114599773073
+      Char2Blue_1: -1756586089904983076
+      Char2Blue_10: 224904913597695964
+      Char2Blue_11: 1543802623656803838
+      Char2Blue_12: -1068564342632047601
+      Char2Blue_13: 319471151210588833
+      Char2Blue_14: 5973480034061858500
+      Char2Blue_15: 2492335981837970655
+      Char2Blue_16: -2144122765822061891
+      Char2Blue_17: -971355340720487682
+      Char2Blue_18: -1672660551594714411
+      Char2Blue_19: -3934502554965162661
+      Char2Blue_2: -4186400405034736228
+      Char2Blue_20: -4704740766114329461
+      Char2Blue_21: -4927816670006170279
+      Char2Blue_22: 2948586094294651033
+      Char2Blue_23: -8201610035792800218
+      Char2Blue_24: 6221095147236200440
+      Char2Blue_25: -8128448248919131618
+      Char2Blue_26: -296925148510291824
+      Char2Blue_27: 3215785746742410259
+      Char2Blue_28: -5542765195752578308
+      Char2Blue_29: 424265797285016725
+      Char2Blue_3: 2051266830108988248
+      Char2Blue_30: 1554118740675115644
+      Char2Blue_4: -3851440145379201058
+      Char2Blue_5: 6078165005497714429
+      Char2Blue_6: 5819439506703166369
+      Char2Blue_7: -8544951408546155577
+      Char2Blue_8: -7766908030931157718
+      Char2Blue_9: -1983846761636156559
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
