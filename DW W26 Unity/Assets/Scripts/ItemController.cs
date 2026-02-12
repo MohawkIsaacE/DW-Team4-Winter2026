@@ -83,6 +83,7 @@ public class ItemController : MonoBehaviour
 
             PickUp();
             IsPickupAllowed = false;
+            rb.linearVelocity = Vector2.zero;
         }
 
         // When the player has an item, throw it
@@ -94,6 +95,15 @@ public class ItemController : MonoBehaviour
         }
     }
 
+    private void FixedUpdate()
+    {
+        // Move down the conveyor if it hasn't been picked up yet
+        if (IsPickupAllowed && !hasBeenThrown)
+        {
+            // Reset movement
+            rb.linearVelocity = Vector2.down * 5;
+        }
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         // Check if item has been thrown yet first
@@ -179,6 +189,9 @@ public class ItemController : MonoBehaviour
         // Make sure no one else can pick up the item
         IsPickupAllowed = false;
         hasBeenThrown = true;
+
+        // Stop all movement first
+        rb.linearVelocity = Vector2.zero;
 
         // Start moving the item (throw it)
 

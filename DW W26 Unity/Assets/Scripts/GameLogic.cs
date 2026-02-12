@@ -68,26 +68,26 @@ public class GameLogic : MonoBehaviour
 
         // Randomly spawn a new item for each time at an interval
         // More items get added as the game progresses
-        //if (currentGameTime < maxGameTime / 4) // Quarter of the way through the time
-        //{
-        //    // Adds spicy
-        //    currentItemVariety = 4;
-        //}
-        //else if (currentGameTime < maxGameTime / 2) // Half of the way through the time
-        //{
-        //    // Adds chips
-        //    currentItemVariety = 3;
-        //}
-        //else if (currentGameTime < maxGameTime / 4 * 3) // Three quarters of the way through the time
-        //{
-        //    // Adds pizza
-        //    currentItemVariety = 2;
-        //}
+        if (currentGameTime < maxGameTime / 4) // Quarter of the way through the time
+        {
+            // Adds spicy
+            currentItemVariety = 4;
+        }
+        else if (currentGameTime < maxGameTime / 2) // Half of the way through the time
+        {
+            // Adds chips
+            currentItemVariety = 3;
+        }
+        else if (currentGameTime < maxGameTime / 4 * 3) // Three quarters of the way through the time
+        {
+            // Adds pizza
+            currentItemVariety = 2;
+        }
 
         if (newItemTimer >= 2f)
         {
             // Spawn item on the left side
-            newItemLeft = Instantiate(items[2], itemSpawnPoints[0].transform.position, Quaternion.identity);
+            newItemLeft = Instantiate(items[Random.Range(0, currentItemVariety)], itemSpawnPoints[0].transform.position, Quaternion.identity);
             newItemLeft.transform.SetParent(GameObject.Find("ItemStorage").transform);
 
             // Spawn item on the right side
