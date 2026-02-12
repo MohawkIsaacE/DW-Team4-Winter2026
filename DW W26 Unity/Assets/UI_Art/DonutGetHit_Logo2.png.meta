@@ -1,0 +1,416 @@
+fileFormatVersion: 2
+guid: b09422a2de0c98a4794c0606f9b1d8a2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7077812498263414889
+    second: DonutGetHit_Logo2_0
+  - first:
+      213: -1060095346943899489
+    second: DonutGetHit_Logo2_1
+  - first:
+      213: 6071011667424877635
+    second: DonutGetHit_Logo2_2
+  - first:
+      213: 5551963139242153801
+    second: DonutGetHit_Logo2_3
+  - first:
+      213: -7492594462739526786
+    second: DonutGetHit_Logo2_4
+  - first:
+      213: -1215349745834837396
+    second: DonutGetHit_Logo2_5
+  - first:
+      213: -2176604332695232094
+    second: DonutGetHit_Logo2_6
+  - first:
+      213: 3973878790160789891
+    second: DonutGetHit_Logo2_7
+  - first:
+      213: 8186238465402800305
+    second: DonutGetHit_Logo2_8
+  - first:
+      213: -2763433718639588634
+    second: DonutGetHit_Logo2_9
+  - first:
+      213: -5653496061122974960
+    second: DonutGetHit_Logo2_10
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DonutGetHit_Logo2_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 427
+        width: 238
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 797603e580f86cd90800000000000000
+      internalID: -7077812498263414889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DonutGetHit_Logo2_1
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 410
+        width: 242
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f984d5906e8c941f0800000000000000
+      internalID: -1060095346943899489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DonutGetHit_Logo2_2
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 427
+        width: 224
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34c9c1822f0904450800000000000000
+      internalID: 6071011667424877635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DonutGetHit_Logo2_3
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 427
+        width: 224
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94757904f098c0d40800000000000000
+      internalID: 5551963139242153801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DonutGetHit_Logo2_4
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 0
+        width: 699
+        height: 928
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7b0a5a9805f40890800000000000000
+      internalID: -7492594462739526786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DonutGetHit_Logo2_5
+      rect:
+        serializedVersion: 2
+        x: 1555
+        y: 599
+        width: 64
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6a37a968d5322fe0800000000000000
+      internalID: -1215349745834837396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DonutGetHit_Logo2_6
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 196
+        width: 210
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a1ef1d34e52bc1e0800000000000000
+      internalID: -2176604332695232094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DonutGetHit_Logo2_7
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 196
+        width: 197
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3813ef384bd062730800000000000000
+      internalID: 3973878790160789891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DonutGetHit_Logo2_8
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 196
+        width: 220
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b809f0038c5b9170800000000000000
+      internalID: 8186238465402800305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DonutGetHit_Logo2_9
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 196
+        width: 30
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ea86289caf46a9d0800000000000000
+      internalID: -2763433718639588634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DonutGetHit_Logo2_10
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 196
+        width: 161
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01be1b1394fba81b0800000000000000
+      internalID: -5653496061122974960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      DonutGetHit_Logo2_0: -7077812498263414889
+      DonutGetHit_Logo2_1: -1060095346943899489
+      DonutGetHit_Logo2_10: -5653496061122974960
+      DonutGetHit_Logo2_2: 6071011667424877635
+      DonutGetHit_Logo2_3: 5551963139242153801
+      DonutGetHit_Logo2_4: -7492594462739526786
+      DonutGetHit_Logo2_5: -1215349745834837396
+      DonutGetHit_Logo2_6: -2176604332695232094
+      DonutGetHit_Logo2_7: 3973878790160789891
+      DonutGetHit_Logo2_8: 8186238465402800305
+      DonutGetHit_Logo2_9: -2763433718639588634
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
