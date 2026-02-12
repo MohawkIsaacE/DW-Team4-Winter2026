@@ -36,7 +36,8 @@ public class ItemChipBehaivour : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             // Stun the player for a moment after they walk into a chip
-
+            collision.gameObject.GetComponent<PlayerController>().isStunned = true;
+            collision.gameObject.GetComponent<PlayerController>().stunTimer = 2f; // Stunned for 2 seconds
 
             // Get rid of the chip
             Destroy(gameObject);

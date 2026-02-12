@@ -25,6 +25,8 @@ public class PlayerController : MonoBehaviour
     private GameObject item;
     public bool isSpicy;
     public float spicyTimer;
+    public bool isStunned;
+    public float stunTimer;
 
     // Assign color value on spawn from main spawner
     public void AssignColor(Color color)
@@ -84,6 +86,16 @@ public class PlayerController : MonoBehaviour
         {
             isSpicy = false;
         }
+
+        // Lower the stunned timer if player is stunned
+        if (isStunned && stunTimer > 0)
+        {
+            stunTimer -= Time.deltaTime;
+        }
+        else
+        {
+            isStunned = false;
+        }
     }
 
     // Runs each phsyics update
@@ -99,17 +111,21 @@ public class PlayerController : MonoBehaviour
         // Reset player movement each frame so it's snappy
         Rigidbody2D.linearVelocity = Vector2.zero;
 
-        // Read the "Move" action value, which is a 2D vector
-        Vector2 moveValue = InputActionMove.ReadValue<Vector2>();
+        // Only allow movement when not stunned
+        if (!isStunned)
+        {
+            // Read the "Move" action value, which is a 2D vector
+            Vector2 moveValue = InputActionMove.ReadValue<Vector2>();
 
-        // Using force to move
-        Vector2 moveForce = moveValue * MoveSpeed;
+            // Using force to move
+            Vector2 moveForce = moveValue * MoveSpeed;
 
-        // Invert controls if the player is spicy
-        if (isSpicy) moveForce = -moveForce;
+            // Invert controls if the player is spicy
+            if (isSpicy) moveForce = -moveForce;
 
-        // Apply force each frame
-        Rigidbody2D.AddForce(moveForce, ForceMode2D.Impulse);
+            // Apply force each frame
+            Rigidbody2D.AddForce(moveForce, ForceMode2D.Impulse);
+        }
     }
 
     // OnValidate runs after any change in the inspector for this script.
