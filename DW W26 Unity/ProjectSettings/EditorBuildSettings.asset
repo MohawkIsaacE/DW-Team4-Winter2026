@@ -11,6 +11,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TitleScreenScene.unity
     guid: 261c789f24875824b8e2a50380de9a95
+  - enabled: 1
+    path: Assets/Scenes/LeftTeamWin.unity
+    guid: 2a524872949911e47b6306cbda545071
+  - enabled: 1
+    path: Assets/Scenes/IsaacTestScene.unity
+    guid: 449df3fd9bff21b4dbf5f68f29fd62c7
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
