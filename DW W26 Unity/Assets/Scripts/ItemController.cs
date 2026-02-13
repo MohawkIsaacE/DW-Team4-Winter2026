@@ -72,10 +72,12 @@ public class ItemController : MonoBehaviour
             if (itemNum % 2 == 1) // Left team
             {
                 isLeftTeam = true;
+                audioManager.Instance.source.PlayOneShot(audioManager.Instance.hitNoise); 
             }
             else if (itemNum % 2 == 0) // Right team
             {
                 isLeftTeam = false;
+                audioManager.Instance.source.PlayOneShot(audioManager.Instance.hitNoise); 
             }
             else
             {
@@ -141,6 +143,7 @@ public class ItemController : MonoBehaviour
             {
                 SpawnChipHazards();
                 hasSpawnedChips = true;
+                audioManager.Instance.source.PlayOneShot(audioManager.Instance.chipCrunch);
             }
 
             gameLogic.UpdateScores();

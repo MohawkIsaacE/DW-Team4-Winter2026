@@ -75,6 +75,7 @@ public class PlayerController : MonoBehaviour
         {
             // Throw the item you are holding
             hasThrown = true;
+            audioManager.Instance.source.PlayOneShot(audioManager.Instance.throwNoise);
         }
 
         // Lower the spicy timer if player is spicy
