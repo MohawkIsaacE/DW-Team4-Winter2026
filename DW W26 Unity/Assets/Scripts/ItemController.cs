@@ -19,7 +19,8 @@ public class ItemController : MonoBehaviour
     public GameLogic gameLogic;
     public GameObject chipPrefab;
     [SerializeField] public Rigidbody2D rb { get; private set; }
-    [SerializeField] public float throwSpeed { get; private set; } = 20f;
+    [SerializeField] public float throwSpeed { get; private set; } = 60f;
+    private float chipThrowSpeed = 20f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -68,11 +69,11 @@ public class ItemController : MonoBehaviour
             itemNum = playerNum;
 
             // Check which player team has picked up the item
-            if (itemNum / 2 == 0) // Left team
+            if (itemNum % 2 == 1) // Left team
             {
                 isLeftTeam = true;
             }
-            else if (itemNum / 2 == 1) // Right team
+            else if (itemNum % 2 == 0) // Right team
             {
                 isLeftTeam = false;
             }
@@ -81,24 +82,24 @@ public class ItemController : MonoBehaviour
                 Debug.Log("Error: No team found");
             }
 
-            PickUp();
             IsPickupAllowed = false;
             rb.linearVelocity = Vector2.zero;
+            PickUp();
         }
 
         // When the player has an item, throw it
         if (player.GetComponent<PlayerController>().hasItem && player.GetComponent<PlayerController>().hasThrown)
         {
             player.GetComponent<PlayerController>().hasItem = false;
+            distanceTimer = 1f; // About half way with 20f throwSpeed
             Throw();
-            distanceTimer = 2f; // About half way with 20f throwSpeed
         }
     }
 
     private void FixedUpdate()
     {
         // Move down the conveyor if it hasn't been picked up yet
-        if (IsPickupAllowed && !hasBeenThrown)
+        if (IsPickupAllowed)
         {
             // Reset movement
             rb.linearVelocity = Vector2.down * 5;
@@ -110,6 +111,7 @@ public class ItemController : MonoBehaviour
         if (collision.gameObject.CompareTag("Player") && hasBeenThrown)
         {
             player = collision.gameObject;
+            if (player.GetComponent<PlayerController>().PlayerNumber == itemNum) return;
             if (isLeftTeam) // Left team
             {
                 Destroy(gameObject);
@@ -135,6 +137,12 @@ public class ItemController : MonoBehaviour
                 // The player needs a way to tell they are spicy - smoke maybe?
             }
 
+            if (data.itemName == Item.Chips)
+            {
+                SpawnChipHazards();
+                hasSpawnedChips = true;
+            }
+
             gameLogic.UpdateScores();
         }
         else if (collision.gameObject.CompareTag("Player"))
@@ -151,16 +159,16 @@ public class ItemController : MonoBehaviour
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player") && player.GetComponent<PlayerController>().canPickup)
         {
-            player = null;
+            //player = null;
             IsPickupAllowed = true;
         }
     }
 
     public void PickUp()
     {
-        if (IsPickupAllowed && player != null)
+        if (player != null)
         {
             // Attach the item to the player that picked it up
             this.transform.SetParent(player.transform);
@@ -257,6 +265,7 @@ public class ItemController : MonoBehaviour
     private void ThrowSpicy()
     {
         // Direction depends on who threw it
+        // Throws faster than other foods and inverts player controls
         if (isLeftTeam) // Left team
         {
             rb.linearVelocity = Vector2.right * throwSpeed;
@@ -269,6 +278,7 @@ public class ItemController : MonoBehaviour
         {
             Debug.Log("Error: No player found");
         }
+        //distanceTimer = 0.5f;
     }
 
     private void ThrowChips()
@@ -277,11 +287,11 @@ public class ItemController : MonoBehaviour
         // Direction depends on who threw it
         if (isLeftTeam) // Left team
         {
-            rb.linearVelocity = Vector2.right * throwSpeed;
+            rb.linearVelocity = Vector2.right * chipThrowSpeed;
         }
         else if (!isLeftTeam) // Right team
         {
-            rb.linearVelocity = Vector2.left * throwSpeed;
+            rb.linearVelocity = Vector2.left * chipThrowSpeed;
         }
         else
         {
