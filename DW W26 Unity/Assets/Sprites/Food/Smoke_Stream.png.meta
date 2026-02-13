@@ -1,13 +1,43 @@
 fileFormatVersion: 2
-guid: ac781f1c8b27b9a498200906c6e43df8
+guid: e9fa5125cc39a654b80e801e55a787fc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5688111090802315427
-    second: Pizza Idle_0
+      213: 4774976455633974425
+    second: Smoke_Stream_0
   - first:
-      213: 4070969700593845640
-    second: Pizza Idle_1
+      213: 7969344843391892499
+    second: Smoke_Stream_1
+  - first:
+      213: -2808976505911835433
+    second: Smoke_Stream_2
+  - first:
+      213: 6865221052871816691
+    second: Smoke_Stream_3
+  - first:
+      213: 1995141700659789041
+    second: Smoke_Stream_4
+  - first:
+      213: 9193630510397954368
+    second: Smoke_Stream_5
+  - first:
+      213: 317267397820402204
+    second: Smoke_Stream_6
+  - first:
+      213: -885884271540469889
+    second: Smoke_Stream_7
+  - first:
+      213: 2724168792375655372
+    second: Smoke_Stream_8
+  - first:
+      213: 1361990820349523550
+    second: Smoke_Stream_9
+  - first:
+      213: 7601296053614245564
+    second: Smoke_Stream_10
+  - first:
+      213: 3828194538278424195
+    second: Smoke_Stream_11
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -54,7 +84,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -103,7 +133,139 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Pizza Idle_0
+      name: Smoke_Stream_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 994bae899cf144240800000000000000
+      internalID: 4774976455633974425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke_Stream_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31cf6f269ecc89e60800000000000000
+      internalID: 7969344843391892499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke_Stream_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d405be10c28409d0800000000000000
+      internalID: -2808976505911835433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke_Stream_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f535f09c2a264f50800000000000000
+      internalID: 6865221052871816691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke_Stream_4
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fc35685eca20bb10800000000000000
+      internalID: 1995141700659789041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke_Stream_5
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04996704d36569f70800000000000000
+      internalID: 9193630510397954368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke_Stream_6
       rect:
         serializedVersion: 2
         x: 0
@@ -118,14 +280,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d5fa4cd8915cf01b0800000000000000
-      internalID: -5688111090802315427
+      spriteID: c1ac5e17409276400800000000000000
+      internalID: 317267397820402204
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pizza Idle_1
+      name: Smoke_Stream_7
       rect:
         serializedVersion: 2
         x: 32
@@ -140,14 +302,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 885464faf5dfe7830800000000000000
-      internalID: 4070969700593845640
+      spriteID: f7f79bad2f4b4b3f0800000000000000
+      internalID: -885884271540469889
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pizza Idle_2
+      name: Smoke_Stream_8
       rect:
         serializedVersion: 2
         x: 64
@@ -160,38 +322,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 12b79fc87ccd5d64cabab8331d233fff
-      internalID: 834426151
+      spriteID: ccb71c955113ec520800000000000000
+      internalID: 2724168792375655372
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pizza Idle_3
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f97d581d2f300c14fb15a4304cdf3990
-      internalID: 274362222
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pizza Idle_4
+      name: Smoke_Stream_9
       rect:
         serializedVersion: 2
         x: 0
@@ -204,16 +344,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: d2999485378726d4d985a5c96fc8b4f8
-      internalID: 1250127957
+      spriteID: e56b64a5f63c6e210800000000000000
+      internalID: 1361990820349523550
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pizza Idle_5
+      name: Smoke_Stream_10
       rect:
         serializedVersion: 2
         x: 32
@@ -226,16 +366,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 28d74705100848b48a54c6357c7070eb
-      internalID: -1633933876
+      spriteID: cb67144cc7a3d7960800000000000000
+      internalID: 7601296053614245564
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pizza Idle_6
+      name: Smoke_Stream_11
       rect:
         serializedVersion: 2
         x: 64
@@ -248,32 +388,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 4625791e0acebd847b16f609a55fe12e
-      internalID: 624310701
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pizza Idle_7
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 933180ae4eefd8c4b8ee3649832a2926
-      internalID: -1791173386
+      spriteID: 38e0d2166aa702530800000000000000
+      internalID: 3828194538278424195
       vertices: []
       indices: 
       edges: []
@@ -282,7 +400,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 462a2d5638c93704db44797a38bdaa44
+    spriteID: 6f2b4382c6b448f42a95284c9a8d0dc1
     internalID: 0
     vertices: []
     indices: 
@@ -292,14 +410,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Pizza Idle_0: -5688111090802315427
-      Pizza Idle_1: 4070969700593845640
-      Pizza Idle_2: 834426151
-      Pizza Idle_3: 274362222
-      Pizza Idle_4: 1250127957
-      Pizza Idle_5: -1633933876
-      Pizza Idle_6: 624310701
-      Pizza Idle_7: -1791173386
+      Smoke_Stream_0: 4774976455633974425
+      Smoke_Stream_1: 7969344843391892499
+      Smoke_Stream_10: 7601296053614245564
+      Smoke_Stream_11: 3828194538278424195
+      Smoke_Stream_2: -2808976505911835433
+      Smoke_Stream_3: 6865221052871816691
+      Smoke_Stream_4: 1995141700659789041
+      Smoke_Stream_5: 9193630510397954368
+      Smoke_Stream_6: 317267397820402204
+      Smoke_Stream_7: -885884271540469889
+      Smoke_Stream_8: 2724168792375655372
+      Smoke_Stream_9: 1361990820349523550
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -16,6 +16,10 @@ public class ItemController : MonoBehaviour
 
     public ItemData data;
 
+    //PlayerAnimator variables
+    Animator i_animator;
+    SpriteRenderer i_spriteRenderer;
+
     public GameLogic gameLogic;
     public GameObject chipPrefab;
     [SerializeField] public Rigidbody2D rb { get; private set; }
@@ -29,6 +33,8 @@ public class ItemController : MonoBehaviour
         gameLogic = GameObject.Find("GameManager").GetComponent<GameLogic>();
         hasSpawnedChips = false;
         hasBeenThrown = false;
+        i_animator = GetComponent<Animator>();
+        i_spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -102,6 +108,12 @@ public class ItemController : MonoBehaviour
         {
             // Reset movement
             rb.linearVelocity = Vector2.down * 5;
+        }
+
+        if (hasBeenThrown == true)
+        {
+            i_animator.SetBool("isThrown", hasBeenThrown);
+            i_animator.SetBool("isThrowing", hasBeenThrown);
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
