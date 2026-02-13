@@ -9,7 +9,7 @@ public class GameOver : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire2"))
         {
-            SceneManager.LoadScene("TitleScreenScene");
+            SceneManager.LoadScene("IsaacTestScene");
         }
     }
 }

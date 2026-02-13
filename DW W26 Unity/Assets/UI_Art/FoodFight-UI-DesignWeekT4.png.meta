@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 27e8a472edc08f14ca3e32503a1c1702
+guid: 82c9093d5e85517429c155454207a6be
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5823688833495525484
-    second: Donut_Get_Hit_Title_Screen_0
+      213: -7840089963551556992
+    second: FoodFight-UI-DesignWeekT4_0
+  - first:
+      213: 2911498340203546543
+    second: FoodFight-UI-DesignWeekT4_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +40,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -75,7 +78,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -96,17 +99,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Donut_Get_Hit_Title_Screen_0
+      name: FoodFight-UI-DesignWeekT4_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1920
-        height: 1080
+        width: 1232
+        height: 1688
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +131,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 49717157cd91e2fa0800000000000000
-      internalID: -5823688833495525484
+      spriteID: 08a776b77b7623390800000000000000
+      internalID: -7840089963551556992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FoodFight-UI-DesignWeekT4_1
+      rect:
+        serializedVersion: 2
+        x: 1319
+        y: 0
+        width: 1232
+        height: 1688
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa7c8fb8058b76820800000000000000
+      internalID: 2911498340203546543
       vertices: []
       indices: 
       edges: []
@@ -135,7 +173,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Donut_Get_Hit_Title_Screen_0: -5823688833495525484
+      FoodFight-UI-DesignWeekT4_0: -7840089963551556992
+      FoodFight-UI-DesignWeekT4_1: 2911498340203546543
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
