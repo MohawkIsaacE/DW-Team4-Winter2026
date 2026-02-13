@@ -20,6 +20,7 @@ public class ItemController : MonoBehaviour
     public GameObject chipPrefab;
     [SerializeField] public Rigidbody2D rb { get; private set; }
     [SerializeField] public float throwSpeed { get; private set; } = 60f;
+    private float chipThrowSpeed = 20f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -267,17 +268,17 @@ public class ItemController : MonoBehaviour
         // Throws faster than other foods and inverts player controls
         if (isLeftTeam) // Left team
         {
-            rb.linearVelocity = Vector2.right * throwSpeed * 2;
+            rb.linearVelocity = Vector2.right * throwSpeed;
         }
         else if (!isLeftTeam) // Right team
         {
-            rb.linearVelocity = Vector2.left * throwSpeed * 2;
+            rb.linearVelocity = Vector2.left * throwSpeed;
         }
         else
         {
             Debug.Log("Error: No player found");
         }
-        distanceTimer = 0.5f;
+        //distanceTimer = 0.5f;
     }
 
     private void ThrowChips()
@@ -286,11 +287,11 @@ public class ItemController : MonoBehaviour
         // Direction depends on who threw it
         if (isLeftTeam) // Left team
         {
-            rb.linearVelocity = Vector2.right * throwSpeed;
+            rb.linearVelocity = Vector2.right * chipThrowSpeed;
         }
         else if (!isLeftTeam) // Right team
         {
-            rb.linearVelocity = Vector2.left * throwSpeed;
+            rb.linearVelocity = Vector2.left * chipThrowSpeed;
         }
         else
         {

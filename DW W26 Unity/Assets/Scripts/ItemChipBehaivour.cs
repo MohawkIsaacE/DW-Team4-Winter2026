@@ -37,9 +37,15 @@ public class ItemChipBehaivour : MonoBehaviour
         {
             // Stun the player for a moment after they walk into a chip
             collision.gameObject.GetComponent<PlayerController>().isStunned = true;
-            collision.gameObject.GetComponent<PlayerController>().stunTimer = 2f; // Stunned for 2 seconds
+            collision.gameObject.GetComponent<PlayerController>().stunTimer = 1f; // Stunned for 1 second
 
             // Get rid of the chip
+            Destroy(gameObject);
+        }
+
+        // Pizza can destroy chips on the ground
+        if (collision.gameObject.GetComponent<ItemController>().data.itemName == Item.Pizza)
+        {
             Destroy(gameObject);
         }
     }
