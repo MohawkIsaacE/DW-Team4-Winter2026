@@ -256,7 +256,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 460fb1d198beb0c458c43c162b4cda1e, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.4
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -355,7 +355,6 @@ MonoBehaviour:
   source: {fileID: 138231938}
   throwNoise: {fileID: 8300000, guid: 1a5c53757cebe584c82a64fd940be351, type: 3}
   hitNoise: {fileID: 8300000, guid: 2248a60e1f7020042a563b72a14577e3, type: 3}
-  spicyNoise: {fileID: 0}
   chipCrunch: {fileID: 8300000, guid: a815c0827381677498c93777b8e53635, type: 3}
 --- !u!4 &138231940
 Transform:
