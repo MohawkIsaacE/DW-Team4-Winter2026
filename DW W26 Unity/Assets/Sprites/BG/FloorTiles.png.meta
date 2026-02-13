@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 1bcff2ab85a975e41801e213178ebbb3
+guid: 3518c89d718c8974ca7b88b4168ed8e4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 447621384461253517
-    second: BGfloor_0
+      213: -7541642142940281356
+    second: FloorTiles_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BGfloor_0
+      name: FloorTiles_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 640
-        height: 360
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d8b7eae0745463600800000000000000
-      internalID: 447621384461253517
+      spriteID: 4f5cde6ad64b65790800000000000000
+      internalID: -7541642142940281356
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      BGfloor_0: 447621384461253517
+      FloorTiles_0: -7541642142940281356
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

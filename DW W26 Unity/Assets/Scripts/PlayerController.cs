@@ -22,8 +22,8 @@ public class PlayerController : MonoBehaviour
 
     //PlayerAnimator variables
     Animator p_animator;
-    SpriteRenderer p_spriteRenderer;
-    public bool isHit = false;
+    public SpriteRenderer p_spriteRenderer;
+    public bool isHit;
 
     // Player-item interaction
     public bool hasItem;
