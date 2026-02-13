@@ -20,6 +20,11 @@ public class PlayerController : MonoBehaviour
     public bool canPickup;
     public bool hasThrown;
 
+    //PlayerAnimator variables
+    Animator p_animator;
+    SpriteRenderer p_spriteRenderer;
+    public bool isHit = false;
+
     // Player-item interaction
     public bool hasItem;
     private GameObject item;
@@ -27,6 +32,12 @@ public class PlayerController : MonoBehaviour
     public float spicyTimer;
     public bool isStunned;
     public float stunTimer;
+
+    private void Start()
+    {
+        p_animator = GetComponent<Animator>();
+        p_spriteRenderer = GetComponent<SpriteRenderer>();
+    }
 
     // Assign color value on spawn from main spawner
     public void AssignColor(Color color)
@@ -111,6 +122,23 @@ public class PlayerController : MonoBehaviour
         // Reset player movement each frame so it's snappy
         Rigidbody2D.linearVelocity = Vector2.zero;
 
+        //Get value of x axis
+        float movement = Input.GetAxis("Horizontal");
+        //use X axis value to switch to Walk animation
+        p_animator.SetFloat("WalkSpeed", Mathf.Abs(movement));
+        p_animator.SetBool("isHit", isHit);
+        //flip sprite
+        //If the player is facing left, flip horizontally.
+        if (movement < 0)
+        {
+            p_spriteRenderer.flipX = false;
+        }
+        // else face right
+        else if (movement > 0)
+        {
+            p_spriteRenderer.flipX = true;
+        }
+
         // Only allow movement when not stunned
         if (!isStunned)
         {
@@ -142,5 +170,13 @@ public class PlayerController : MonoBehaviour
             Rigidbody2D = GetComponent<Rigidbody2D>();
         if (SpriteRenderer == null)
             SpriteRenderer = GetComponent<SpriteRenderer>();
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Item"))
+        {
+            isHit = true;
+        }
     }
 }

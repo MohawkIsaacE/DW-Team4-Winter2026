@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2560508750860280296}
   - component: {fileID: -1287759540171150116}
   - component: {fileID: 5570743172940164300}
-  - component: {fileID: 1248572864276347395}
+  - component: {fileID: 6854822314766521351}
   m_Layer: 0
   m_Name: Item_Chips
   m_TagString: Item
@@ -172,7 +172,7 @@ MonoBehaviour:
     itemName: 3
   gameLogic: {fileID: 0}
   chipPrefab: {fileID: 363803225545969114, guid: 0a735bf097109b84faaa1e6986a3806f, type: 3}
---- !u!95 &1248572864276347395
+--- !u!95 &6854822314766521351
 Animator:
   serializedVersion: 7
   m_ObjectHideFlags: 0
@@ -182,7 +182,7 @@ Animator:
   m_GameObject: {fileID: 363803225545969114}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 884f77ae909a075479683bde258c9326, type: 2}
+  m_Controller: {fileID: 9100000, guid: ead3ccd7874ad564d9f494a741f95db1, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2560508750860280296}
   - component: {fileID: -1287759540171150116}
   - component: {fileID: 5570743172940164300}
+  - component: {fileID: 589704772933984256}
   m_Layer: 0
   m_Name: Item_Donut
   m_TagString: Item
@@ -171,3 +172,25 @@ MonoBehaviour:
     itemName: 1
   gameLogic: {fileID: 0}
   chipPrefab: {fileID: 0}
+--- !u!95 &589704772933984256
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 363803225545969114}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f4e4bd004976e864199ba7d46d3ea5cd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

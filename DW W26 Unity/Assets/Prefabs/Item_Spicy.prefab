@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2560508750860280296}
   - component: {fileID: -1287759540171150116}
   - component: {fileID: 5570743172940164300}
-  - component: {fileID: 5597988234307859510}
+  - component: {fileID: 3043476196470675061}
   m_Layer: 0
   m_Name: Item_Spicy
   m_TagString: Item
@@ -172,7 +172,7 @@ MonoBehaviour:
     itemName: 2
   gameLogic: {fileID: 0}
   chipPrefab: {fileID: 0}
---- !u!95 &5597988234307859510
+--- !u!95 &3043476196470675061
 Animator:
   serializedVersion: 7
   m_ObjectHideFlags: 0
@@ -182,7 +182,7 @@ Animator:
   m_GameObject: {fileID: 363803225545969114}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: aec3a5c18c7f2174d9351303cb9480cf, type: 2}
+  m_Controller: {fileID: 9100000, guid: b10064b269736db40951197d2125cc23, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
