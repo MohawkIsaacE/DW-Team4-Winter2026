@@ -17,7 +17,7 @@ public class GameLogic : MonoBehaviour
     [SerializeField] public TextMeshProUGUI timerLeft;
     [SerializeField] public TextMeshProUGUI timerRight;
     [SerializeField] public float currentGameTime { get; private set; }
-    private float maxGameTime = 10f; // 180f = 3 minutes
+    private float maxGameTime = 180f; // 180f = 3 minutes
     private float newItemTimer;
 
     [Header("Item Spawning")]
