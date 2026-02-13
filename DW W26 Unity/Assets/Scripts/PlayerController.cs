@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -75,6 +76,7 @@ public class PlayerController : MonoBehaviour
         {
             // Throw the item you are holding
             hasThrown = true;
+            audioManager.Instance.source.PlayOneShot(audioManager.Instance.throwNoise);
         }
 
         // Lower the spicy timer if player is spicy
@@ -122,10 +124,12 @@ public class PlayerController : MonoBehaviour
 
             // Invert controls if the player is spicy
             if (isSpicy) moveForce = -moveForce;
+            // PLAY SPICY SOUND EFFECT
 
             // Apply force each frame
             Rigidbody2D.AddForce(moveForce, ForceMode2D.Impulse);
         }
+
     }
 
     // OnValidate runs after any change in the inspector for this script.
