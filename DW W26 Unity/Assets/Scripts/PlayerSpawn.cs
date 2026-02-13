@@ -7,6 +7,11 @@ public class PlayerSpawn : MonoBehaviour
     [field: SerializeField] public Color[] PlayerColors { get; private set; }
     public int PlayerCount { get; private set; }
 
+    private void Start()
+    {
+        Time.timeScale = 0;
+    }
+
     public void OnPlayerJoined(PlayerInput playerInput)
     {
         int maxPlayerCount = Mathf.Min(SpawnPoints.Length, PlayerColors.Length);
@@ -43,6 +48,11 @@ public class PlayerSpawn : MonoBehaviour
         playerController.AssignPlayerInputDevice(playerInput);
         playerController.AssignPlayerNumber(PlayerCount);
         playerController.AssignColor(color);
+
+        if (PlayerCount >= 2)
+        {
+            Time.timeScale = 1;
+        }
     }
 
     public void OnPlayerLeft(PlayerInput playerInput)
