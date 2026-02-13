@@ -138,6 +138,7 @@ public class ItemController : MonoBehaviour
                 player.GetComponent<PlayerController>().spicyTimer = 5f;
                 // The player needs a way to tell they are spicy - smoke maybe?
                 //audioManager.Instance.PlayOneShot(audioManager.Instance.spicyNoise);
+                //TEST COMMENT
             }
 
             if (data.itemName == Item.Chips)
