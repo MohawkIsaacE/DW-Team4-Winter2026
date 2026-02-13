@@ -17,7 +17,7 @@ public class GameLogic : MonoBehaviour
     [SerializeField] public TextMeshProUGUI timerLeft;
     [SerializeField] public TextMeshProUGUI timerRight;
     [SerializeField] public float currentGameTime { get; private set; }
-    private float maxGameTime = 180f; // 180f = 3 minutes
+    private float maxGameTime = 10f; // 180f = 3 minutes
     private float newItemTimer;
 
     [Header("Item Spawning")]
@@ -89,13 +89,13 @@ public class GameLogic : MonoBehaviour
         if (newItemTimer >= 2f)
         {
             // Spawn item on the left side
-            //newItemLeft = Instantiate(items[Random.Range(0, currentItemVariety)], itemSpawnPoints[0].transform.position, Quaternion.identity);
-            newItemLeft = Instantiate(items[2], itemSpawnPoints[0].transform.position, Quaternion.identity);
+            newItemLeft = Instantiate(items[Random.Range(0, currentItemVariety)], itemSpawnPoints[0].transform.position, Quaternion.identity);
+            //newItemLeft = Instantiate(items[2], itemSpawnPoints[0].transform.position, Quaternion.identity);
             newItemLeft.transform.SetParent(GameObject.Find("ItemStorage").transform);
 
             // Spawn item on the right side
-            //newItemRight = Instantiate(items[Random.Range(0, currentItemVariety)], itemSpawnPoints[1].transform.position, Quaternion.identity);
-            newItemRight = Instantiate(items[0], itemSpawnPoints[1].transform.position, Quaternion.identity);
+            newItemRight = Instantiate(items[Random.Range(0, currentItemVariety)], itemSpawnPoints[1].transform.position, Quaternion.identity);
+            //newItemRight = Instantiate(items[0], itemSpawnPoints[1].transform.position, Quaternion.identity);
             newItemRight.transform.SetParent(GameObject.Find("ItemStorage").transform);
 
             // Reset the spawn timer

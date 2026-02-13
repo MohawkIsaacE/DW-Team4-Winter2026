@@ -42,9 +42,8 @@ public class ItemChipBehaivour : MonoBehaviour
             // Get rid of the chip
             Destroy(gameObject);
         }
-
         // Pizza can destroy chips on the ground
-        if (collision.gameObject.GetComponent<ItemController>().data.itemName == Item.Pizza)
+        if (collision.gameObject.CompareTag("Item") && collision.gameObject.GetComponent<ItemController>().data.itemName == Item.Pizza)
         {
             Destroy(gameObject);
         }
