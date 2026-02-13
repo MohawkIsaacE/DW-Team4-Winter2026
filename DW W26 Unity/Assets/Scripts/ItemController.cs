@@ -21,7 +21,7 @@ public class ItemController : MonoBehaviour
     [SerializeField] public Rigidbody2D rb { get; private set; }
     [SerializeField] public float throwSpeed { get; private set; } = 60f;
     private float chipThrowSpeed = 20f;
-   
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -117,14 +117,12 @@ public class ItemController : MonoBehaviour
                 Destroy(gameObject);
                 // add points to left team
                 gameLogic.Team1Score += 1;
-                audioManager.Instance.source.PlayOneShot(audioManager.Instance.hitNoise);
             }
             else if (!isLeftTeam)
             {
                 Destroy(gameObject);
                 // add points to right team
                 gameLogic.Team2Score += 1;
-                audioManager.Instance.source.PlayOneShot(audioManager.Instance.hitNoise);
             }
             else
             {
@@ -137,14 +135,12 @@ public class ItemController : MonoBehaviour
                 player.GetComponent<PlayerController>().isSpicy = true;
                 player.GetComponent<PlayerController>().spicyTimer = 5f;
                 // The player needs a way to tell they are spicy - smoke maybe?
-                //audioManager.Instance.PlayOneShot(audioManager.Instance.spicyNoise);
             }
 
             if (data.itemName == Item.Chips)
             {
                 SpawnChipHazards();
                 hasSpawnedChips = true;
-                audioManager.Instance.source.PlayOneShot(audioManager.Instance.chipCrunch);
             }
 
             gameLogic.UpdateScores();

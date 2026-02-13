@@ -1,22 +1,10 @@
 fileFormatVersion: 2
-guid: 67d06061fce0ea3469349ba4dd3facdb
+guid: c7f6413abcb2c8e4b8d7cd41795f83c5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7285643019367252678
-    second: Pizza Throw_0
-  - first:
-      213: 5236074263175522286
-    second: Pizza Throw_1
-  - first:
-      213: 8673739722902234280
-    second: Pizza Throw_2
-  - first:
-      213: 4132475740979418046
-    second: Pizza Throw_3
-  - first:
-      213: -3358420022503336173
-    second: Pizza Throw_4
+      213: 6246883256175032252
+    second: BG-right_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -112,101 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Pizza Throw_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a3d7f4e564234ea90800000000000000
-      internalID: -7285643019367252678
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pizza Throw_1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ee7642aecc54aa840800000000000000
-      internalID: 5236074263175522286
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pizza Throw_2
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8a468c192505f5870800000000000000
-      internalID: 8673739722902234280
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pizza Throw_3
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: eb35ff7aac0895930800000000000000
-      internalID: 4132475740979418046
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pizza Throw_4
+      name: BG-right_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 32
+        width: 640
+        height: 360
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 317112088ce7461d0800000000000000
-      internalID: -3358420022503336173
+      spriteID: cb7f5ad593361b650800000000000000
+      internalID: 6246883256175032252
       vertices: []
       indices: 
       edges: []
@@ -225,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: c430b592259f19c4fabe053009ad0aac
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -235,11 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Pizza Throw_0: -7285643019367252678
-      Pizza Throw_1: 5236074263175522286
-      Pizza Throw_2: 8673739722902234280
-      Pizza Throw_3: 4132475740979418046
-      Pizza Throw_4: -3358420022503336173
+      BG-right_0: 6246883256175032252
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
